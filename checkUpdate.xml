@@ -3,5 +3,5 @@
     <version>2.0.0.0</version>
     <url>https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/releases</url>
     <changelog>https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/releases</changelog>
-    <mandatory>false</mandatory>
+    <mandatory>true</mandatory>
 </item>
