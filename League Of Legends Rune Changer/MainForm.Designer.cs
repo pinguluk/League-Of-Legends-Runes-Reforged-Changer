@@ -1,5 +1,5 @@
 ﻿namespace League_Of_Legends_Rune_Changer {
-    partial class Form1 {
+    partial class MainForm {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -23,11 +23,12 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.runes_listbox = new System.Windows.Forms.ListBox();
             this.add_rune_xml_button = new System.Windows.Forms.Button();
             this.remove_rune_xml_button = new System.Windows.Forms.Button();
             this.apply_rune_xml_button = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.donateLink = new System.Windows.Forms.LinkLabel();
             this.currentAppVersion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -71,16 +72,16 @@
             this.apply_rune_xml_button.UseVisualStyleBackColor = true;
             this.apply_rune_xml_button.Click += new System.EventHandler(this.apply_rune_xml_button_Click);
             // 
-            // linkLabel1
+            // donateLink
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(238, 266);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(51, 13);
-            this.linkLabel1.TabIndex = 19;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Donate :)";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.donateLink.AutoSize = true;
+            this.donateLink.Location = new System.Drawing.Point(238, 266);
+            this.donateLink.Name = "donateLink";
+            this.donateLink.Size = new System.Drawing.Size(51, 13);
+            this.donateLink.TabIndex = 19;
+            this.donateLink.TabStop = true;
+            this.donateLink.Text = "Donate :)";
+            this.donateLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.donateLink_LinkClicked);
             // 
             // currentAppVersion
             // 
@@ -93,22 +94,23 @@
             this.currentAppVersion.TabIndex = 20;
             this.currentAppVersion.Text = "currentAppVersion";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(301, 292);
             this.Controls.Add(this.currentAppVersion);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.donateLink);
             this.Controls.Add(this.apply_rune_xml_button);
             this.Controls.Add(this.remove_rune_xml_button);
             this.Controls.Add(this.add_rune_xml_button);
             this.Controls.Add(this.runes_listbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
-            this.Text = "LoL Rune Changer";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "MainForm";
+            this.Text = "LoL Runes Reforged Changer";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,7 +121,7 @@
         private System.Windows.Forms.Button add_rune_xml_button;
         private System.Windows.Forms.Button remove_rune_xml_button;
         private System.Windows.Forms.Button apply_rune_xml_button;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel donateLink;
         private System.Windows.Forms.Label currentAppVersion;
     }
 }

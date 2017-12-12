@@ -13,19 +13,19 @@ using System.Diagnostics;
 using System.Text.RegularExpressions;
 
 namespace League_Of_Legends_Rune_Changer {
-    public partial class PromptRune : Form {
+    public partial class EnterNewRuneForm : Form {
 
-        public PromptRune() {
+        public EnterNewRuneForm() {
             InitializeComponent();
         }
 
-        static PromptRune MsgBox; static DialogResult result = DialogResult.No;
+        static EnterNewRuneForm MsgBox; static DialogResult result = DialogResult.No;
 
         public static string add_rune_name;
         public static string add_rune_url;
 
         public static DialogResult Show(string Text, string btnOK, string btnCancel) {
-            MsgBox = new PromptRune();
+            MsgBox = new EnterNewRuneForm();
             result = DialogResult.No;
             MsgBox.ShowDialog();
             return result;

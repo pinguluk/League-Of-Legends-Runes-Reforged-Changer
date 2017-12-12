@@ -27,14 +27,14 @@ using AutoUpdaterDotNET;
 
 namespace League_Of_Legends_Rune_Changer {
 
-    public partial class Form1 : Form {
+    public partial class MainForm : Form {
 
         //Initialise
-        public Form1() {
+        public MainForm() {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e) {
+        private void MainForm_Load(object sender, EventArgs e) {
             AutoUpdater.OpenDownloadPage = true;
             AutoUpdater.ShowSkipButton = false;
             AutoUpdater.ShowRemindLaterButton = false;
@@ -53,6 +53,7 @@ namespace League_Of_Legends_Rune_Changer {
         public bool league_window_exists;
         public int league_window_x;
         public int league_window_y;
+        public Size league_window_size;
 
         XmlDocument xmlDoc = new XmlDocument();
 
@@ -60,8 +61,6 @@ namespace League_Of_Legends_Rune_Changer {
 
         //HWND Handle
         IntPtr hwnd;
-
-
 
         //Variables X & Y for Runes
         List<Dictionary<string, string>> allDictionaries = new List<Dictionary<string, string>>();
@@ -104,121 +103,121 @@ namespace League_Of_Legends_Rune_Changer {
         public void addCoordsToRuneDict() {
 
             //Edit page name
-                rune_edit_page_name.Add("x", "50");
-                rune_edit_page_name.Add("y", "127");
+            rune_edit_page_name.Add("x", "50");
+            rune_edit_page_name.Add("y", "127");
 
             //Rune save button
-                rune_save_button.Add("x", "400");
-                rune_save_button.Add("y", "127");
+            rune_save_button.Add("x", "400");
+            rune_save_button.Add("y", "127");
 
             //Grid
-                rune_grid_style_2.Add("x", "75");
-                rune_grid_style_2.Add("y", "675");
+            rune_grid_style_2.Add("x", "75");
+            rune_grid_style_2.Add("y", "675");
 
             //Paths Collumn 1
-                rune_col_1_path_1.Add("x", "131");
-                rune_col_1_path_1.Add("y", "212");
+            rune_col_1_path_1.Add("x", "131");
+            rune_col_1_path_1.Add("y", "212");
 
-                rune_col_1_path_2.Add("x", "171");
-                rune_col_1_path_2.Add("y", "212");
+            rune_col_1_path_2.Add("x", "171");
+            rune_col_1_path_2.Add("y", "212");
 
-                rune_col_1_path_3.Add("x", "211");
-                rune_col_1_path_3.Add("y", "212");
+            rune_col_1_path_3.Add("x", "211");
+            rune_col_1_path_3.Add("y", "212");
 
-                rune_col_1_path_4.Add("x", "251");
-                rune_col_1_path_4.Add("y", "212");
+            rune_col_1_path_4.Add("x", "251");
+            rune_col_1_path_4.Add("y", "212");
 
-                rune_col_1_path_5.Add("x", "291");
-                rune_col_1_path_5.Add("y", "212");
+            rune_col_1_path_5.Add("x", "291");
+            rune_col_1_path_5.Add("y", "212");
 
-                //Keystones Collumn 1
+            //Keystones Collumn 1
 
-                    //Row 1
-                        rune_col_1_row_1_keystone_1.Add("x", "144");
-                        rune_col_1_row_1_keystone_1.Add("y", "332");
+            //Row 1
+            rune_col_1_row_1_keystone_1.Add("x", "144");
+            rune_col_1_row_1_keystone_1.Add("y", "332");
 
-                        rune_col_1_row_1_keystone_2.Add("x", "210");
-                        rune_col_1_row_1_keystone_2.Add("y", "332");
+            rune_col_1_row_1_keystone_2.Add("x", "210");
+            rune_col_1_row_1_keystone_2.Add("y", "332");
 
-                        rune_col_1_row_1_keystone_3.Add("x", "276");
-                        rune_col_1_row_1_keystone_3.Add("y", "332");
+            rune_col_1_row_1_keystone_3.Add("x", "276");
+            rune_col_1_row_1_keystone_3.Add("y", "332");
 
-                    //Row 2
-                        rune_col_1_row_2_keystone_1.Add("x", "144");
-                        rune_col_1_row_2_keystone_1.Add("y", "430");
+            //Row 2
+            rune_col_1_row_2_keystone_1.Add("x", "144");
+            rune_col_1_row_2_keystone_1.Add("y", "430");
 
-                        rune_col_1_row_2_keystone_2.Add("x", "210");
-                        rune_col_1_row_2_keystone_2.Add("y", "430");
+            rune_col_1_row_2_keystone_2.Add("x", "210");
+            rune_col_1_row_2_keystone_2.Add("y", "430");
 
-                        rune_col_1_row_2_keystone_3.Add("x", "276");
-                        rune_col_1_row_2_keystone_3.Add("y", "430");
+            rune_col_1_row_2_keystone_3.Add("x", "276");
+            rune_col_1_row_2_keystone_3.Add("y", "430");
 
 
-                    //Row 3
-                        rune_col_1_row_3_keystone_1.Add("x", "144");
-                        rune_col_1_row_3_keystone_1.Add("y", "518");
+            //Row 3
+            rune_col_1_row_3_keystone_1.Add("x", "144");
+            rune_col_1_row_3_keystone_1.Add("y", "518");
 
-                        rune_col_1_row_3_keystone_2.Add("x", "210");
-                        rune_col_1_row_3_keystone_2.Add("y", "518");
+            rune_col_1_row_3_keystone_2.Add("x", "210");
+            rune_col_1_row_3_keystone_2.Add("y", "518");
 
-                        rune_col_1_row_3_keystone_3.Add("x", "276");
-                        rune_col_1_row_3_keystone_3.Add("y", "518");
+            rune_col_1_row_3_keystone_3.Add("x", "276");
+            rune_col_1_row_3_keystone_3.Add("y", "518");
 
-                    //Row 4
-                        rune_col_1_row_4_keystone_1.Add("x", "144");
-                        rune_col_1_row_4_keystone_1.Add("y", "605");
+            //Row 4
+            rune_col_1_row_4_keystone_1.Add("x", "144");
+            rune_col_1_row_4_keystone_1.Add("y", "605");
 
-                        rune_col_1_row_4_keystone_2.Add("x", "210");
-                        rune_col_1_row_4_keystone_2.Add("y", "605");
+            rune_col_1_row_4_keystone_2.Add("x", "210");
+            rune_col_1_row_4_keystone_2.Add("y", "605");
 
-                        rune_col_1_row_4_keystone_3.Add("x", "276");
-                        rune_col_1_row_4_keystone_3.Add("y", "605");
+            rune_col_1_row_4_keystone_3.Add("x", "276");
+            rune_col_1_row_4_keystone_3.Add("y", "605");
 
             //Paths Collumn 2
-                rune_col_2_path_1.Add("x", "461");
-                rune_col_2_path_1.Add("y", "212");
+            rune_col_2_path_1.Add("x", "461");
+            rune_col_2_path_1.Add("y", "212");
 
-                rune_col_2_path_2.Add("x", "511");
-                rune_col_2_path_2.Add("y", "212");
+            rune_col_2_path_2.Add("x", "511");
+            rune_col_2_path_2.Add("y", "212");
 
-                rune_col_2_path_3.Add("x", "561");
-                rune_col_2_path_3.Add("y", "212");
+            rune_col_2_path_3.Add("x", "561");
+            rune_col_2_path_3.Add("y", "212");
 
-                rune_col_2_path_4.Add("x", "611");
-                rune_col_2_path_4.Add("y", "212");
+            rune_col_2_path_4.Add("x", "611");
+            rune_col_2_path_4.Add("y", "212");
 
-                //Keystones Collumn 2
+            //Keystones Collumn 2
 
-                    //Row 1
-                        rune_col_2_row_1_keystone_1.Add("x", "470");
-                        rune_col_2_row_1_keystone_1.Add("y", "302");
+            //Row 1
+            rune_col_2_row_1_keystone_1.Add("x", "470");
+            rune_col_2_row_1_keystone_1.Add("y", "302");
 
-                        rune_col_2_row_1_keystone_2.Add("x", "537");
-                        rune_col_2_row_1_keystone_2.Add("y", "302");
+            rune_col_2_row_1_keystone_2.Add("x", "537");
+            rune_col_2_row_1_keystone_2.Add("y", "302");
 
-                        rune_col_2_row_1_keystone_3.Add("x", "602");
-                        rune_col_2_row_1_keystone_3.Add("y", "302");
+            rune_col_2_row_1_keystone_3.Add("x", "602");
+            rune_col_2_row_1_keystone_3.Add("y", "302");
 
-                    //Row 2
-                        rune_col_2_row_2_keystone_1.Add("x", "470");
-                        rune_col_2_row_2_keystone_1.Add("y", "380");
+            //Row 2
+            rune_col_2_row_2_keystone_1.Add("x", "470");
+            rune_col_2_row_2_keystone_1.Add("y", "380");
 
-                        rune_col_2_row_2_keystone_2.Add("x", "537");
-                        rune_col_2_row_2_keystone_2.Add("y", "380");
+            rune_col_2_row_2_keystone_2.Add("x", "537");
+            rune_col_2_row_2_keystone_2.Add("y", "380");
 
-                        rune_col_2_row_2_keystone_3.Add("x", "602");
-                        rune_col_2_row_2_keystone_3.Add("y", "380");
+            rune_col_2_row_2_keystone_3.Add("x", "602");
+            rune_col_2_row_2_keystone_3.Add("y", "380");
 
 
-                    //Row 3
-                        rune_col_2_row_3_keystone_1.Add("x", "470");
-                        rune_col_2_row_3_keystone_1.Add("y", "459");
+            //Row 3
+            rune_col_2_row_3_keystone_1.Add("x", "470");
+            rune_col_2_row_3_keystone_1.Add("y", "459");
 
-                        rune_col_2_row_3_keystone_2.Add("x", "537");
-                        rune_col_2_row_3_keystone_2.Add("y", "459");
+            rune_col_2_row_3_keystone_2.Add("x", "537");
+            rune_col_2_row_3_keystone_2.Add("y", "459");
 
-                        rune_col_2_row_3_keystone_3.Add("x", "602");
-                        rune_col_2_row_3_keystone_3.Add("y", "459");
+            rune_col_2_row_3_keystone_3.Add("x", "602");
+            rune_col_2_row_3_keystone_3.Add("y", "459");
 
         }
 
@@ -275,6 +274,8 @@ namespace League_Of_Legends_Rune_Changer {
             league_window_exists = GetWindowRect(hwnd, ref rct);
             league_window_x = rct.Left;
             league_window_y = rct.Top;
+            league_window_size.Width = rct.Right - rct.Left;
+            league_window_size.Height = rct.Bottom - rct.Top;
         }
 
         //Unminimize & Bring "League of Legends" on front
@@ -361,7 +362,7 @@ namespace League_Of_Legends_Rune_Changer {
             Rectangle rect = new Rectangle(
                 42 + league_window_x,
                 120 + league_window_y,
-                17, 
+                17,
                 16
                 );
             Bitmap bmpScreenshot = new Bitmap(rect.Width, rect.Height);
@@ -410,7 +411,8 @@ namespace League_Of_Legends_Rune_Changer {
                             currentDict["x"] = (Int32.Parse(currentDict["x"]) + 110).ToString();
                         }
                     }
-                } else if (compareImagesTwo == false) {
+                }
+                else if (compareImagesTwo == false) {
                     return false;
                 }
             }
@@ -426,7 +428,7 @@ namespace League_Of_Legends_Rune_Changer {
             int ypos = Int32.Parse(runeDict["y"]) + league_window_y;
             SetCursorPos(xpos, ypos);
             //Debug.WriteLine("xpos:" + xpos + "\n" + "ypos: " + ypos + "\n");
-            //Thread.Sleep(100);
+            //Thread.Sleep(500);
             mouse_event(MOUSEEVENTF_LEFTDOWN, xpos, ypos, 0, 0);
             mouse_event(MOUSEEVENTF_LEFTUP, xpos, ypos, 0, 0);
         }
@@ -437,266 +439,274 @@ namespace League_Of_Legends_Rune_Changer {
 
             getLeagueCoords();
 
-            if (league_window_exists == true) {
-
-                Regex rgx = new Regex(@"\d{8}$");
-                Match match = rgx.Match(currentRuneXML);
-
-                string build_rune_number = match.ToString();
-
-                char[] characters = build_rune_number.ToCharArray();
-
-                List<Dictionary<string, string>> clickOrderRune = new List<Dictionary<string, string>>();
-
-                //Char 1 (0-4)
-                if (characters[0].Equals('0')) {
-                    clickOrderRune.Add(rune_col_1_path_1);
-                    //Debug.WriteLine(rune_col_1_path_1);
-                }
-
-                if (characters[0].Equals('1')) {
-                    clickOrderRune.Add(rune_col_1_path_2);
-                    //Debug.WriteLine(rune_col_1_path_2);
-                }
-
-                if (characters[0].Equals('2')) {
-                    clickOrderRune.Add(rune_col_1_path_3);
-                    //Debug.WriteLine(rune_col_1_path_3);
-                }
-
-                if (characters[0].Equals('3')) {
-                    clickOrderRune.Add(rune_col_1_path_4);
-                    //Debug.WriteLine(rune_col_1_path_4);
-                }
-
-                if (characters[0].Equals('4')) {
-                    clickOrderRune.Add(rune_col_1_path_5);
-                    //Debug.WriteLine(rune_col_1_path_5);
-                }
-
-                //Char 2 (0-2)
-                if (characters[1].Equals('0')) {
-                    clickOrderRune.Add(rune_col_1_row_1_keystone_1);
-                    //Debug.WriteLine(rune_col_1_row_1_keystone_1);
-                }
-
-                if (characters[1].Equals('1')) {
-                    clickOrderRune.Add(rune_col_1_row_1_keystone_2);
-                    //Debug.WriteLine(rune_col_1_row_1_keystone_2);
-                }
-
-                if (characters[1].Equals('2')) {
-                    clickOrderRune.Add(rune_col_1_row_1_keystone_3);
-                    //Debug.WriteLine(rune_col_1_row_1_keystone_3);
-                }
-
-                //Char 3 (0-2)
-                if (characters[2].Equals('0')) {
-                    clickOrderRune.Add(rune_col_1_row_2_keystone_1);
-                    //Debug.WriteLine(rune_col_1_row_2_keystone_1);
-                }
-
-                if (characters[2].Equals('1')) {
-                    clickOrderRune.Add(rune_col_1_row_2_keystone_2);
-                    //Debug.WriteLine(rune_col_1_row_2_keystone_2);
-                }
-
-                if (characters[2].Equals('2')) {
-                    clickOrderRune.Add(rune_col_1_row_2_keystone_3);
-                    //Debug.WriteLine(rune_col_1_row_2_keystone_3);
-                }
-
-                //Char 4 (0-2)
-                if (characters[3].Equals('0')) {
-                    clickOrderRune.Add(rune_col_1_row_3_keystone_1);
-                    //Debug.WriteLine(rune_col_1_row_3_keystone_1);
-                }
-
-                if (characters[3].Equals('1')) {
-                    clickOrderRune.Add(rune_col_1_row_3_keystone_2);
-                    //Debug.WriteLine(rune_col_1_row_3_keystone_2);
-                }
-
-                if (characters[3].Equals('2')) {
-                    clickOrderRune.Add(rune_col_1_row_3_keystone_3);
-                    //Debug.WriteLine(rune_col_1_row_3_keystone_3);
-                }
-
-                //Char 5 (0-2)
-                if (characters[4].Equals('0')) {
-                    clickOrderRune.Add(rune_col_1_row_4_keystone_1);
-                    //Debug.WriteLine(rune_col_1_row_4_keystone_1);
-                }
-
-                if (characters[4].Equals('1')) {
-                    clickOrderRune.Add(rune_col_1_row_4_keystone_2);
-                    //Debug.WriteLine(rune_col_1_row_4_keystone_2);
-                }
-
-                if (characters[4].Equals('2')) {
-                    clickOrderRune.Add(rune_col_1_row_4_keystone_3);
-                    //Debug.WriteLine(rune_col_1_row_4_keystone_3);
-                }
-
-                //Char 6 (0-3)
-                if (characters[5].Equals('0')) {
-                    clickOrderRune.Add(rune_col_2_path_1);
-                    //Debug.WriteLine(rune_col_2_path_1);
-                }
-
-                if (characters[5].Equals('1')) {
-                    clickOrderRune.Add(rune_col_2_path_2);
-                    //Debug.WriteLine(rune_col_2_path_2);
-                }
-
-                if (characters[5].Equals('2')) {
-                    clickOrderRune.Add(rune_col_2_path_3);
-                    //Debug.WriteLine(rune_col_2_path_3);
-                }
-
-                if (characters[5].Equals('3')) {
-                    clickOrderRune.Add(rune_col_2_path_4);
-                    //Debug.WriteLine(rune_col_2_path_4);
-                }
-
-                //Char 7 (0-8)
-                if (characters[6].Equals('0')) {
-                    clickOrderRune.Add(rune_col_2_row_1_keystone_1);
-                    //Debug.WriteLine(rune_col_2_row_1_keystone_1);
-                }
-
-                if (characters[6].Equals('1')) {
-                    clickOrderRune.Add(rune_col_2_row_1_keystone_2);
-                    //Debug.WriteLine(rune_col_2_row_1_keystone_2);
-                }
-
-                if (characters[6].Equals('2')) {
-                    clickOrderRune.Add(rune_col_2_row_1_keystone_3);
-                    //Debug.WriteLine(rune_col_2_row_1_keystone_3);
-                }
-
-                if (characters[6].Equals('3')) {
-                    clickOrderRune.Add(rune_col_2_row_2_keystone_1);
-                    //Debug.WriteLine(rune_col_2_row_2_keystone_1);
-                }
-
-                if (characters[6].Equals('4')) {
-                    clickOrderRune.Add(rune_col_2_row_2_keystone_2);
-                    //Debug.WriteLine(rune_col_2_row_2_keystone_2);
-                }
-
-                if (characters[6].Equals('5')) {
-                    clickOrderRune.Add(rune_col_2_row_2_keystone_3);
-                    //Debug.WriteLine(rune_col_2_row_2_keystone_3);
-                }
-
-                if (characters[6].Equals('6')) {
-                    clickOrderRune.Add(rune_col_2_row_3_keystone_1);
-                    //Debug.WriteLine(rune_col_2_row_3_keystone_1);
-                }
-
-                if (characters[6].Equals('7')) {
-                    clickOrderRune.Add(rune_col_2_row_3_keystone_2);
-                    //Debug.WriteLine(rune_col_2_row_3_keystone_2);
-                }
-
-                if (characters[6].Equals('8')) {
-                    clickOrderRune.Add(rune_col_2_row_3_keystone_3);
-                    //Debug.WriteLine(rune_col_2_row_3_keystone_3);
-                }
-
-                //Char 8 (0-8)
-                if (characters[7].Equals('0')) {
-                    clickOrderRune.Add(rune_col_2_row_1_keystone_1);
-                    //Debug.WriteLine(rune_col_2_row_1_keystone_1);
-                }
-
-                if (characters[7].Equals('1')) {
-                    clickOrderRune.Add(rune_col_2_row_1_keystone_2);
-                    //Debug.WriteLine(rune_col_2_row_1_keystone_2);
-                }
-
-                if (characters[7].Equals('2')) {
-                    clickOrderRune.Add(rune_col_2_row_1_keystone_3);
-                    //Debug.WriteLine(rune_col_2_row_1_keystone_3);
-                }
-
-                if (characters[7].Equals('3')) {
-                    clickOrderRune.Add(rune_col_2_row_2_keystone_1);
-                    //Debug.WriteLine(rune_col_2_row_2_keystone_1);
-                }
-
-                if (characters[7].Equals('4')) {
-                    clickOrderRune.Add(rune_col_2_row_2_keystone_2);
-                    //Debug.WriteLine(rune_col_2_row_2_keystone_2);
-                }
-
-                if (characters[7].Equals('5')) {
-                    clickOrderRune.Add(rune_col_2_row_2_keystone_3);
-                    //Debug.WriteLine(rune_col_2_row_2_keystone_3);
-                }
-
-                if (characters[7].Equals('6')) {
-                    clickOrderRune.Add(rune_col_2_row_3_keystone_1);
-                    //Debug.WriteLine(rune_col_2_row_3_keystone_1);
-                }
-
-                if (characters[7].Equals('7')) {
-                    clickOrderRune.Add(rune_col_2_row_3_keystone_2);
-                    //Debug.WriteLine(rune_col_2_row_3_keystone_2);
-                }
-
-                if (characters[7].Equals('8')) {
-                    clickOrderRune.Add(rune_col_2_row_3_keystone_3);
-                    //Debug.WriteLine(rune_col_2_row_3_keystone_3);
-                }
-
-
-                //initial cursor pos
-                int cursor_x = Cursor.Position.X;
-                int cursor_y = Cursor.Position.Y;
-
-                //Debug.WriteLine(league_window_x);
-                //Debug.WriteLine(league_window_y);
-
-                if (checkAndSetRuneMode() == true) {
-                    SetCursorPos(
-                        Int32.Parse(rune_edit_page_name["x"]) + league_window_x,
-                        Int32.Parse(rune_edit_page_name["y"]) + league_window_y
-                        );
-
-                    //edit name
-                    LeftMouseClick(rune_edit_page_name);
-                    SendKeys.Send("^a");
-                    var rune_name_selected = ((Runes_List)runes_listbox.SelectedItem).Name;
-                    SendKeys.Send(rune_name_selected);
-                    SendKeys.Send("{ENTER}");
-
-                    //select grid
-                    LeftMouseClick(rune_grid_style_2);
-
-                    //click runes
-                    foreach (var currentRuneClick in clickOrderRune) {
-                        //Debug.WriteLine(currentRuneClick["x"]);
-                        //Debug.WriteLine(currentRuneClick["y"]);
-                        //Debug.WriteLine("");
-                        LeftMouseClick(currentRuneClick);
-                        //Thread.Sleep(1000);
-                    }
-
-                    //click save button
-                    LeftMouseClick(rune_save_button);
-
-                    //set cursor to original pos
-                    SetCursorPos(cursor_x, cursor_y);
-                }
-                else {
-                    MessageBox.Show(new Form { TopMost = true }, "Go to a Rune Page and try again.", "Error");
-                }
-            } else if (league_window_exists == false) {
+            //check league
+            if (league_window_exists == false) {
                 MessageBox.Show("Please start League Of Legends first and enter on a Rune Page", "Error");
+                return;
             }
 
+            //check resolution
+            if (league_window_size != new Size(1280, 720)) {
+                MessageBox.Show(new Form { TopMost = true }, "Set League Client resolution to 1280 x 720 first.", "Error");
+                return;
+            }
+
+            Regex rgx = new Regex(@"\d{8}$");
+            Match match = rgx.Match(currentRuneXML);
+
+            string build_rune_number = match.ToString();
+
+            char[] characters = build_rune_number.ToCharArray();
+
+            List<Dictionary<string, string>> clickOrderRune = new List<Dictionary<string, string>>();
+
+            //Char 1 (0-4)
+            if (characters[0].Equals('0')) {
+                clickOrderRune.Add(rune_col_1_path_1);
+                //Debug.WriteLine(rune_col_1_path_1);
+            }
+
+            if (characters[0].Equals('1')) {
+                clickOrderRune.Add(rune_col_1_path_2);
+                //Debug.WriteLine(rune_col_1_path_2);
+            }
+
+            if (characters[0].Equals('2')) {
+                clickOrderRune.Add(rune_col_1_path_3);
+                //Debug.WriteLine(rune_col_1_path_3);
+            }
+
+            if (characters[0].Equals('3')) {
+                clickOrderRune.Add(rune_col_1_path_4);
+                //Debug.WriteLine(rune_col_1_path_4);
+            }
+
+            if (characters[0].Equals('4')) {
+                clickOrderRune.Add(rune_col_1_path_5);
+                //Debug.WriteLine(rune_col_1_path_5);
+            }
+
+            //Char 2 (0-2)
+            if (characters[1].Equals('0')) {
+                clickOrderRune.Add(rune_col_1_row_1_keystone_1);
+                //Debug.WriteLine(rune_col_1_row_1_keystone_1);
+            }
+
+            if (characters[1].Equals('1')) {
+                clickOrderRune.Add(rune_col_1_row_1_keystone_2);
+                //Debug.WriteLine(rune_col_1_row_1_keystone_2);
+            }
+
+            if (characters[1].Equals('2')) {
+                clickOrderRune.Add(rune_col_1_row_1_keystone_3);
+                //Debug.WriteLine(rune_col_1_row_1_keystone_3);
+            }
+
+            //Char 3 (0-2)
+            if (characters[2].Equals('0')) {
+                clickOrderRune.Add(rune_col_1_row_2_keystone_1);
+                //Debug.WriteLine(rune_col_1_row_2_keystone_1);
+            }
+
+            if (characters[2].Equals('1')) {
+                clickOrderRune.Add(rune_col_1_row_2_keystone_2);
+                //Debug.WriteLine(rune_col_1_row_2_keystone_2);
+            }
+
+            if (characters[2].Equals('2')) {
+                clickOrderRune.Add(rune_col_1_row_2_keystone_3);
+                //Debug.WriteLine(rune_col_1_row_2_keystone_3);
+            }
+
+            //Char 4 (0-2)
+            if (characters[3].Equals('0')) {
+                clickOrderRune.Add(rune_col_1_row_3_keystone_1);
+                //Debug.WriteLine(rune_col_1_row_3_keystone_1);
+            }
+
+            if (characters[3].Equals('1')) {
+                clickOrderRune.Add(rune_col_1_row_3_keystone_2);
+                //Debug.WriteLine(rune_col_1_row_3_keystone_2);
+            }
+
+            if (characters[3].Equals('2')) {
+                clickOrderRune.Add(rune_col_1_row_3_keystone_3);
+                //Debug.WriteLine(rune_col_1_row_3_keystone_3);
+            }
+
+            //Char 5 (0-2)
+            if (characters[4].Equals('0')) {
+                clickOrderRune.Add(rune_col_1_row_4_keystone_1);
+                //Debug.WriteLine(rune_col_1_row_4_keystone_1);
+            }
+
+            if (characters[4].Equals('1')) {
+                clickOrderRune.Add(rune_col_1_row_4_keystone_2);
+                //Debug.WriteLine(rune_col_1_row_4_keystone_2);
+            }
+
+            if (characters[4].Equals('2')) {
+                clickOrderRune.Add(rune_col_1_row_4_keystone_3);
+                //Debug.WriteLine(rune_col_1_row_4_keystone_3);
+            }
+
+            //Char 6 (0-3)
+            if (characters[5].Equals('0')) {
+                clickOrderRune.Add(rune_col_2_path_1);
+                //Debug.WriteLine(rune_col_2_path_1);
+            }
+
+            if (characters[5].Equals('1')) {
+                clickOrderRune.Add(rune_col_2_path_2);
+                //Debug.WriteLine(rune_col_2_path_2);
+            }
+
+            if (characters[5].Equals('2')) {
+                clickOrderRune.Add(rune_col_2_path_3);
+                //Debug.WriteLine(rune_col_2_path_3);
+            }
+
+            if (characters[5].Equals('3')) {
+                clickOrderRune.Add(rune_col_2_path_4);
+                //Debug.WriteLine(rune_col_2_path_4);
+            }
+
+            //Char 7 (0-8)
+            if (characters[6].Equals('0')) {
+                clickOrderRune.Add(rune_col_2_row_1_keystone_1);
+                //Debug.WriteLine(rune_col_2_row_1_keystone_1);
+            }
+
+            if (characters[6].Equals('1')) {
+                clickOrderRune.Add(rune_col_2_row_1_keystone_2);
+                //Debug.WriteLine(rune_col_2_row_1_keystone_2);
+            }
+
+            if (characters[6].Equals('2')) {
+                clickOrderRune.Add(rune_col_2_row_1_keystone_3);
+                //Debug.WriteLine(rune_col_2_row_1_keystone_3);
+            }
+
+            if (characters[6].Equals('3')) {
+                clickOrderRune.Add(rune_col_2_row_2_keystone_1);
+                //Debug.WriteLine(rune_col_2_row_2_keystone_1);
+            }
+
+            if (characters[6].Equals('4')) {
+                clickOrderRune.Add(rune_col_2_row_2_keystone_2);
+                //Debug.WriteLine(rune_col_2_row_2_keystone_2);
+            }
+
+            if (characters[6].Equals('5')) {
+                clickOrderRune.Add(rune_col_2_row_2_keystone_3);
+                //Debug.WriteLine(rune_col_2_row_2_keystone_3);
+            }
+
+            if (characters[6].Equals('6')) {
+                clickOrderRune.Add(rune_col_2_row_3_keystone_1);
+                //Debug.WriteLine(rune_col_2_row_3_keystone_1);
+            }
+
+            if (characters[6].Equals('7')) {
+                clickOrderRune.Add(rune_col_2_row_3_keystone_2);
+                //Debug.WriteLine(rune_col_2_row_3_keystone_2);
+            }
+
+            if (characters[6].Equals('8')) {
+                clickOrderRune.Add(rune_col_2_row_3_keystone_3);
+                //Debug.WriteLine(rune_col_2_row_3_keystone_3);
+            }
+
+            //Char 8 (0-8)
+            if (characters[7].Equals('0')) {
+                clickOrderRune.Add(rune_col_2_row_1_keystone_1);
+                //Debug.WriteLine(rune_col_2_row_1_keystone_1);
+            }
+
+            if (characters[7].Equals('1')) {
+                clickOrderRune.Add(rune_col_2_row_1_keystone_2);
+                //Debug.WriteLine(rune_col_2_row_1_keystone_2);
+            }
+
+            if (characters[7].Equals('2')) {
+                clickOrderRune.Add(rune_col_2_row_1_keystone_3);
+                //Debug.WriteLine(rune_col_2_row_1_keystone_3);
+            }
+
+            if (characters[7].Equals('3')) {
+                clickOrderRune.Add(rune_col_2_row_2_keystone_1);
+                //Debug.WriteLine(rune_col_2_row_2_keystone_1);
+            }
+
+            if (characters[7].Equals('4')) {
+                clickOrderRune.Add(rune_col_2_row_2_keystone_2);
+                //Debug.WriteLine(rune_col_2_row_2_keystone_2);
+            }
+
+            if (characters[7].Equals('5')) {
+                clickOrderRune.Add(rune_col_2_row_2_keystone_3);
+                //Debug.WriteLine(rune_col_2_row_2_keystone_3);
+            }
+
+            if (characters[7].Equals('6')) {
+                clickOrderRune.Add(rune_col_2_row_3_keystone_1);
+                //Debug.WriteLine(rune_col_2_row_3_keystone_1);
+            }
+
+            if (characters[7].Equals('7')) {
+                clickOrderRune.Add(rune_col_2_row_3_keystone_2);
+                //Debug.WriteLine(rune_col_2_row_3_keystone_2);
+            }
+
+            if (characters[7].Equals('8')) {
+                clickOrderRune.Add(rune_col_2_row_3_keystone_3);
+                //Debug.WriteLine(rune_col_2_row_3_keystone_3);
+            }
+
+
+            //initial cursor pos
+            int cursor_x = Cursor.Position.X;
+            int cursor_y = Cursor.Position.Y;
+
+            //Debug.WriteLine(league_window_x);
+            //Debug.WriteLine(league_window_y);
+
+            if (checkAndSetRuneMode() == true) {
+                SetCursorPos(
+                    Int32.Parse(rune_edit_page_name["x"]) + league_window_x,
+                    Int32.Parse(rune_edit_page_name["y"]) + league_window_y
+                    );
+
+                //edit name
+                LeftMouseClick(rune_edit_page_name);
+                SendKeys.Send("^a");
+                var rune_name_selected = ((Runes_List)runes_listbox.SelectedItem).Name;
+                SendKeys.Send(rune_name_selected);
+                SendKeys.Send("{ENTER}");
+
+                //wait for name to save
+                Thread.Sleep(100);
+
+                //select grid
+                LeftMouseClick(rune_grid_style_2);
+
+                //click runes
+                foreach (var currentRuneClick in clickOrderRune) {
+                    //Debug.WriteLine(currentRuneClick["x"]);
+                    //Debug.WriteLine(currentRuneClick["y"]);
+                    //Debug.WriteLine("");
+                    LeftMouseClick(currentRuneClick);
+                    //Thread.Sleep(1000);
+                }
+
+                //click save button
+                LeftMouseClick(rune_save_button);
+
+                //set cursor to original pos
+                SetCursorPos(cursor_x, cursor_y);
+            } else {
+                MessageBox.Show(new Form { TopMost = true }, "Go to a Rune Page and try again.", "Error");
+            }
         }
 
         private void set_rune_from_url_button_Click(object sender, EventArgs e) {
@@ -715,7 +725,7 @@ namespace League_Of_Legends_Rune_Changer {
         private void LoadRunesXML() {
             xmlDoc.Load("runes_list.xml");
 
-            foreach(XmlNode node in xmlDoc.DocumentElement) {
+            foreach (XmlNode node in xmlDoc.DocumentElement) {
                 string name = node.Attributes["name"].Value;
                 string url = node["Url"].InnerText;
                 runes_listbox.Items.Add(new Runes_List(name, url));
@@ -726,7 +736,7 @@ namespace League_Of_Legends_Rune_Changer {
 
         private void runes_listbox_SelectedIndexChanged(object sender, EventArgs e) {
 
-             if( runes_listbox.SelectedIndex != -1 ) {
+            if (runes_listbox.SelectedIndex != -1) {
                 currentRuneXML = ((Runes_List)runes_listbox.SelectedItem).Url;
             }
 
@@ -736,7 +746,8 @@ namespace League_Of_Legends_Rune_Changer {
 
             if (runes_listbox.SelectedIndex != -1) {
                 parse_rune_url(currentRuneXML);
-            } else {
+            }
+            else {
                 MessageBox.Show("Select a rune first!");
             }
 
@@ -746,7 +757,7 @@ namespace League_Of_Legends_Rune_Changer {
 
             //string promptValue = Prompt.ShowDialog("Enter Rune Name", "Add New Rune");
 
-            DialogResult promptReturn = PromptRune.Show("Enter New Rune", "OK", "CANCEL");
+            DialogResult promptReturn = EnterNewRuneForm.Show("Enter New Rune", "OK", "CANCEL");
 
             if (promptReturn == DialogResult.Yes) {
 
@@ -754,11 +765,11 @@ namespace League_Of_Legends_Rune_Changer {
 
                 //rune name
                 XmlElement newElement = xmlDoc.CreateElement("Rune");
-                newElement.SetAttribute("name", PromptRune.add_rune_name);
+                newElement.SetAttribute("name", EnterNewRuneForm.add_rune_name);
 
                 //rune url
                 XmlElement newElementUrl = xmlDoc.CreateElement("Url");
-                newElementUrl.InnerText = PromptRune.add_rune_url;
+                newElementUrl.InnerText = EnterNewRuneForm.add_rune_url;
 
                 //append
                 newElement.AppendChild(newElementUrl);
@@ -766,7 +777,7 @@ namespace League_Of_Legends_Rune_Changer {
                 root.AppendChild(newElement);
 
                 //add to list
-                runes_listbox.Items.Add(new Runes_List(PromptRune.add_rune_name, PromptRune.add_rune_url));
+                runes_listbox.Items.Add(new Runes_List(EnterNewRuneForm.add_rune_name, EnterNewRuneForm.add_rune_url));
 
                 xmlDoc.Save("runes_list.xml");
 
@@ -796,14 +807,15 @@ namespace League_Of_Legends_Rune_Changer {
 
                 xmlDoc.Save("runes_list.xml");
 
-            } else {
+            }
+            else {
                 MessageBox.Show("Select a rune first!", "Info");
             }
 
         }
 
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+        private void donateLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
             Process.Start("https://www.paypal.me/pinguluk");
         }
 

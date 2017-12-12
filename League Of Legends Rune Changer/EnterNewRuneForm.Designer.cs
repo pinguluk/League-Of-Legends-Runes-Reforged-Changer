@@ -1,5 +1,5 @@
 ﻿namespace League_Of_Legends_Rune_Changer {
-    partial class PromptRune {
+    partial class EnterNewRuneForm {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -24,6 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EnterNewRuneForm));
             this.add_rune_name_inputbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -82,6 +83,7 @@
             // 
             // cancel_rune_button
             // 
+            this.cancel_rune_button.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancel_rune_button.Location = new System.Drawing.Point(197, 158);
             this.cancel_rune_button.Name = "cancel_rune_button";
             this.cancel_rune_button.Size = new System.Drawing.Size(75, 23);
@@ -106,11 +108,11 @@
             this.linkLabel1.LinkArea = new System.Windows.Forms.LinkArea(0, 24);
             this.linkLabel1.Location = new System.Drawing.Point(12, 101);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(234, 42);
+            this.linkLabel1.Size = new System.Drawing.Size(259, 42);
             this.linkLabel1.TabIndex = 6;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Create custom build here, then copy the link \r\nfrom \"Share your build\" using\r\n\"Di" +
-    "rect Link\" (last icon bottom right)\r\n";
+            this.linkLabel1.Text = "Create your custom build here, then copy the link \r\nfrom \"Share your build\" using" +
+    "\r\n\"Direct Link\" (last icon bottom right)\r\n";
             this.linkLabel1.UseCompatibleTextRendering = true;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
@@ -118,7 +120,7 @@
             // 
             this.rune_name_error.ContainerControl = this;
             // 
-            // PromptRune
+            // EnterNewRuneForm
             // 
             this.AcceptButton = this.add_rune_button;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,10 +136,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.add_rune_name_inputbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "PromptRune";
+            this.Name = "EnterNewRuneForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Enter new rune";
+            this.Text = "Enter New Rune";
             ((System.ComponentModel.ISupportInitialize)(this.rune_name_error)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
