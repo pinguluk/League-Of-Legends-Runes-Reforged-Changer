@@ -7,4 +7,5 @@ C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legen
 C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Release\League Of Legends Rune Changer.exe
 C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Release\League Of Legends Rune Changer.pdb
 C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\runes_list.xml
+C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Release\League_Of_Legends_Rune_Changer.PromptRune.resources
 C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Release\League Of Legends Rune Changer.csprojResolveAssemblyReference.cache

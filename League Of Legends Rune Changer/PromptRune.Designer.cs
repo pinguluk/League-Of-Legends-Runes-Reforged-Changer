@@ -23,14 +23,17 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.add_rune_name_inputbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.add_rune_url_inputbox = new System.Windows.Forms.TextBox();
             this.add_rune_button = new System.Windows.Forms.Button();
             this.cancel_rune_button = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.rune_name_error = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.rune_name_error)).BeginInit();
             this.SuspendLayout();
             // 
             // add_rune_name_inputbox
@@ -62,6 +65,7 @@
             // add_rune_url_inputbox
             // 
             this.add_rune_url_inputbox.Location = new System.Drawing.Point(12, 74);
+            this.add_rune_url_inputbox.MaxLength = 83;
             this.add_rune_url_inputbox.Name = "add_rune_url_inputbox";
             this.add_rune_url_inputbox.Size = new System.Drawing.Size(260, 20);
             this.add_rune_url_inputbox.TabIndex = 3;
@@ -85,6 +89,16 @@
             this.cancel_rune_button.Text = "Cancel";
             this.cancel_rune_button.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.25F);
+            this.label3.Location = new System.Drawing.Point(72, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "(Max. 24 characters)";
+            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -100,21 +114,17 @@
             this.linkLabel1.UseCompatibleTextRendering = true;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // label3
+            // rune_name_error
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.25F);
-            this.label3.Location = new System.Drawing.Point(72, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "(Max. 24 characters)";
+            this.rune_name_error.ContainerControl = this;
             // 
             // PromptRune
             // 
+            this.AcceptButton = this.add_rune_button;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 208);
+            this.CancelButton = this.cancel_rune_button;
+            this.ClientSize = new System.Drawing.Size(284, 190);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.cancel_rune_button);
@@ -123,9 +133,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.add_rune_name_inputbox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "PromptRune";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Enter new rune";
+            ((System.ComponentModel.ISupportInitialize)(this.rune_name_error)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,7 +152,8 @@
         private System.Windows.Forms.TextBox add_rune_url_inputbox;
         private System.Windows.Forms.Button add_rune_button;
         private System.Windows.Forms.Button cancel_rune_button;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.ErrorProvider rune_name_error;
     }
 }

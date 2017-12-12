@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 using System.Diagnostics;
 
+using System.Text.RegularExpressions;
+
 namespace League_Of_Legends_Rune_Changer {
     public partial class PromptRune : Form {
 
@@ -24,9 +26,6 @@ namespace League_Of_Legends_Rune_Changer {
 
         public static DialogResult Show(string Text, string btnOK, string btnCancel) {
             MsgBox = new PromptRune();
-            //MsgBox.label1.Text = Text;
-            //MsgBox.button1.Text = btnOK;
-            //MsgBox.button2.Text = btnCancel;
             result = DialogResult.No;
             MsgBox.ShowDialog();
             return result;
@@ -36,10 +35,41 @@ namespace League_Of_Legends_Rune_Changer {
             Process.Start("http://na.leagueoflegends.com/en/featured/preseason-update#builder");
         }
 
+
         private void add_rune_button_Click(object sender, EventArgs e) {
+
             add_rune_name = add_rune_name_inputbox.Text;
             add_rune_url = add_rune_url_inputbox.Text;
-            MsgBox.Close();
+
+            bool goNext = true;
+
+            if ((String.IsNullOrEmpty(add_rune_name) || String.IsNullOrWhiteSpace(add_rune_name))) {
+                MessageBox.Show("Please enter a name for the Rune.", "Error");
+                goNext = false;
+            }
+
+            if ((String.IsNullOrEmpty(add_rune_url) || String.IsNullOrWhiteSpace(add_rune_url))) {
+                MessageBox.Show("Please enter the URL for the Rune build.", "Error");
+                goNext = false;
+            } else {
+                string url_pattern = @"(http:\/\/na.leagueoflegends.com\/en\/featured\/preseason-update\/)\d{4}-\d{4}\?build=\d{8}";
+                Regex r = new Regex(url_pattern);
+
+                Match m = r.Match(add_rune_url);
+
+                if (m.Success) {
+                    //Debug.WriteLine(m);
+                }
+                else {
+                    MessageBox.Show("Please enter a valid URL for the Rune build.", "Error");
+                    goNext = false;
+                }
+            }
+
+            if (goNext == true) {
+                result = DialogResult.Yes;
+                MsgBox.Close();
+            }
         }
 
     }

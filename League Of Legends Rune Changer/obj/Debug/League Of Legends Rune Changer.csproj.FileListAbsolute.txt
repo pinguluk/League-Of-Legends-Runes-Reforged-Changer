@@ -8,3 +8,4 @@ C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legen
 C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Debug\League Of Legends Rune Changer.pdb
 C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\runes_list.xml
 C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Debug\League_Of_Legends_Rune_Changer.PromptRune.resources
+C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Debug\League Of Legends Rune Changer.csprojResolveAssemblyReference.cache
