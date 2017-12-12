@@ -30,6 +30,11 @@ I can't give you any kind of update now or anytime in the immediate future, but 
 ## Issues
 If you encounter an issue please let me know [here](https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/issues)! Also I appreciate any kind of feedback!
 
+## Donate
+If you find this program useful, you can give me a cup of coffee :)  
+
+  [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/pinguluk)
+
 ## Copyright
 
 RuneBook isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
