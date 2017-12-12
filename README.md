@@ -4,7 +4,7 @@ Automated Runes Reforged Page manager for League of Legends
 ## Download
 
 You can download the latest release from here:
-[Download](https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/releases)
+   [Download](https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/releases)
 
 ## Will I get banned for using this?
 
