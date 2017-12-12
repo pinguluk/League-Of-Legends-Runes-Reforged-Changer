@@ -20,6 +20,8 @@ using System.Xml;
 
 using System.Drawing.Imaging;
 
+using AutoUpdaterDotNET;
+
 
 
 
@@ -33,6 +35,10 @@ namespace League_Of_Legends_Rune_Changer {
         }
 
         private void Form1_Load(object sender, EventArgs e) {
+            AutoUpdater.OpenDownloadPage = true;
+            AutoUpdater.ShowSkipButton = false;
+            AutoUpdater.ShowRemindLaterButton = false;
+            AutoUpdater.Start("https://raw.githubusercontent.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/master/checkUpdate.xml");
             addCoordsToRuneDict();
             LoadRunesXML();
             addDictionaries();
@@ -800,6 +806,7 @@ namespace League_Of_Legends_Rune_Changer {
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
             Process.Start("https://www.paypal.me/pinguluk");
         }
+
     }
 
 

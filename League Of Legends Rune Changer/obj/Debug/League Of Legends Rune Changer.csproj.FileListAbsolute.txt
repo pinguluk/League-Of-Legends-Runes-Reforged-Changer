@@ -9,3 +9,24 @@ C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legen
 C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\runes_list.xml
 C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Debug\League_Of_Legends_Rune_Changer.PromptRune.resources
 C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Debug\League Of Legends Rune Changer.csprojResolveAssemblyReference.cache
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\League Of Legends Rune Changer.exe.manifest
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\League Of Legends Rune Changer.application
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\AutoUpdater.NET.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\AutoUpdater.NET.pdb
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\AutoUpdater.NET.xml
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\da\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\de\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\es\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\fr\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\it\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\ja-JP\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\ko\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\nl\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\pl\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\pt\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\ru\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\sv\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\tr\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Debug\zh\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Debug\League Of Legends Rune Changer.exe.manifest
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Debug\League Of Legends Rune Changer.application

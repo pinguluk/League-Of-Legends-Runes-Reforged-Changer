@@ -8,4 +8,24 @@ C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legen
 C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Release\League Of Legends Rune Changer.pdb
 C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\runes_list.xml
 C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Release\League_Of_Legends_Rune_Changer.PromptRune.resources
-C:\Users\pinguluk\onedrive\documente\visual studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Release\League Of Legends Rune Changer.csprojResolveAssemblyReference.cache
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\League Of Legends Rune Changer.exe.manifest
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\League Of Legends Rune Changer.application
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\AutoUpdater.NET.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\AutoUpdater.NET.pdb
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\AutoUpdater.NET.xml
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\da\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\de\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\es\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\fr\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\it\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\ja-JP\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\ko\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\nl\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\pl\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\pt\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\ru\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\sv\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\tr\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\bin\Release\zh\AutoUpdater.NET.resources.dll
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Release\League Of Legends Rune Changer.exe.manifest
+C:\Users\pinguluk\OneDrive\Documente\Visual Studio 2015\Projects\League Of Legends Rune Changer\League Of Legends Rune Changer\obj\Release\League Of Legends Rune Changer.application
