@@ -1,12 +1,12 @@
 # RuneBook
 Automated Runes Reforged Page manager for League of Legends
 
-### Download
+## Download
 
 You can download the latest release from here:
 [Download](https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/blob/master/README.md)
 
-### Will I get banned for using this?
+## Will I get banned for using this?
 
 Riot Sargonas has stated the following on the matter:
 
