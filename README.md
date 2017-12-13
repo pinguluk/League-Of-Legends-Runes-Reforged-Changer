@@ -33,7 +33,12 @@ If you encounter an issue please let me know [here](https://github.com/pinguluk/
 ## Donate
 If you find this program useful, you can give me a cup of coffee :)  
 
+  Paypal:  
   [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/pinguluk)
+     
+  Bitcoin:   
+  <img src="https://i.imgur.com/rbFCtBf.jpg" width="30%">   
+  13qrpgm9sywuT6Bjzf7uM5AfBSQtBHy7nC
 
 ## Copyright
 
