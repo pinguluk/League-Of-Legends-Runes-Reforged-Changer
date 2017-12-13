@@ -282,7 +282,7 @@ namespace League_Of_Legends_Rune_Changer {
         //"League of Legends" Window Handle
         public IntPtr getLeagueWindowHandle() {
             hwnd = FindWindow(null, "League of Legends");
-            //hwnd = WinGetHandle("Form1");
+            //hwnd = FindWindow(null, "Form1");
             //Debug.WriteLine(hwnd);
             return hwnd;
         }
@@ -361,12 +361,11 @@ namespace League_Of_Legends_Rune_Changer {
         static extern bool GetCursorInfo(out CURSORINFO pci);
 
 
-
         //Check Cursor Hover Rune Name Button
         private bool CheckHoverCursor() {
 
             //wait a bit in case if rune description box appear during that time
-            Thread.Sleep(150);
+            Thread.Sleep(100);
 
             IntPtr league_hover = new IntPtr(65567); //LoL has custom hover/hand cursor icon
             CURSORINFO pci;
@@ -379,8 +378,30 @@ namespace League_Of_Legends_Rune_Changer {
         }
 
 
+        //Set All Dictionaries to Menu mode
+        public void SetDictionariesMenuMode() {
+            if (Int32.Parse(allDictionaries[0]["x"]) > 50) {
+                foreach (var currentDict in allDictionaries) {
+                    currentDict["x"] = (Int32.Parse(currentDict["x"]) - 110).ToString();
+                }
+            }
+        }
+
+        //Set All Dictionaries to In Champion select mode
+        public void SetDictionariesInChampionSelect() {
+            if (Int32.Parse(allDictionaries[0]["x"]) < 160) {
+                foreach (var currentDict in allDictionaries) {
+                    currentDict["x"] = (Int32.Parse(currentDict["x"]) + 110).ToString();
+                }
+            }
+        }
+
+
         //Check Rune Mode
         public bool checkAndSetRuneMode() {
+
+            //Reset Dictionaries to menu mode (default);
+            SetDictionariesMenuMode();
 
             //move cursor, if is on hover => in menu
             SetCursorPos(
@@ -391,13 +412,9 @@ namespace League_Of_Legends_Rune_Changer {
             //Menu Mode
             if (CheckHoverCursor()) {
                 Debug.WriteLine("Menu Mode");
-                if (Int32.Parse(allDictionaries[0]["x"]) > 50) {
-                    foreach (var currentDict in allDictionaries) {
-                        currentDict["x"] = (Int32.Parse(currentDict["x"]) - 110).ToString();
-                    }
-                }
-              //In Champion Select 
-            } else if (!CheckHoverCursor()) {
+                SetDictionariesMenuMode();
+                //In Champion Select 
+            } else {
                 ///move cursor over "edit page name" button correspondent to the "in champion select"
                 SetCursorPos(
                     Int32.Parse(rune_edit_page_name["x"]) + league_window_x + 110,
@@ -406,11 +423,7 @@ namespace League_Of_Legends_Rune_Changer {
                 //check again if it's on hover, if true => in champion select, if not => neither in menu mode nor in champion select
                 if (CheckHoverCursor()) {
                     Debug.WriteLine("In Champion Select Mode");
-                    if (Int32.Parse(allDictionaries[0]["x"]) < 160) {
-                        foreach (var currentDict in allDictionaries) {
-                            currentDict["x"] = (Int32.Parse(currentDict["x"]) + 110).ToString();
-                        }
-                    }
+                    SetDictionariesInChampionSelect();
                 } else {
                     //neither in menu mode nor in champion select
                     return false;
@@ -426,6 +439,7 @@ namespace League_Of_Legends_Rune_Changer {
         public void LeftMouseClick(Dictionary<string, string> runeDict) {
             int xpos = Int32.Parse(runeDict["x"]) + league_window_x;
             int ypos = Int32.Parse(runeDict["y"]) + league_window_y;
+            //Thread.Sleep(100);
             SetCursorPos(xpos, ypos);
             //Debug.WriteLine("xpos:" + xpos + "\n" + "ypos: " + ypos + "\n");
             //Thread.Sleep(500);

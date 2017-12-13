@@ -223,14 +223,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="League Of Legends Rune Changer.exe" size="231424">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="League Of Legends Rune Changer.exe" size="208384">
       <assemblyIdentity name="League Of Legends Rune Changer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>J7LBM1nsuEviA9IKfXaUzumF40UcjCRN8pHUjcz86d8=</dsig:DigestValue>
+        <dsig:DigestValue>/J13bkSX7P3Jl6/yqRjubZBuSYQGLIf33ySExuEHDTQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
