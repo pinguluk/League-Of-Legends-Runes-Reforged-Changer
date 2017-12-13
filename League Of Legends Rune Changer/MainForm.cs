@@ -283,6 +283,7 @@ namespace League_Of_Legends_Rune_Changer {
         public IntPtr getLeagueWindowHandle() {
             hwnd = FindWindow(null, "League of Legends");
             //hwnd = WinGetHandle("Form1");
+            //Debug.WriteLine(hwnd);
             return hwnd;
         }
 
@@ -300,7 +301,6 @@ namespace League_Of_Legends_Rune_Changer {
 
         //Unminimize & Bring "League of Legends" on front
         public void focusLeagueWindow() {
-            getLeagueWindowHandle();
             ShowWindow(new HandleRef(null, hwnd), SW_RESTORE);
             SetForegroundWindow(hwnd);
         }
@@ -339,99 +339,80 @@ namespace League_Of_Legends_Rune_Changer {
             return FindWindow(String.Empty, caption);
         }
 
-        public static bool CompareBitmapsFast(Bitmap bmp1, Bitmap bmp2) {
-            if (bmp1 == null || bmp2 == null)
-                return false;
-            if (object.Equals(bmp1, bmp2))
-                return true;
-            if (!bmp1.Size.Equals(bmp2.Size) || !bmp1.PixelFormat.Equals(bmp2.PixelFormat))
-                return false;
 
-            int bytes = bmp1.Width * bmp1.Height * (System.Drawing.Image.GetPixelFormatSize(bmp1.PixelFormat) / 8);
+        [StructLayout(LayoutKind.Sequential)]
+        struct POINT {
+            public Int32 x;
+            public Int32 y;
+        }
 
-            bool result = true;
-            byte[] b1bytes = new byte[bytes];
-            byte[] b2bytes = new byte[bytes];
+        [StructLayout(LayoutKind.Sequential)]
+        struct CURSORINFO {
+            public Int32 cbSize;        // Specifies the size, in bytes, of the structure. 
+                                        // The caller must set this to Marshal.SizeOf(typeof(CURSORINFO)).
+            public Int32 flags;         // Specifies the cursor state. This parameter can be one of the following values:
+                                        //    0             The cursor is hidden.
+                                        //    CURSOR_SHOWING    The cursor is showing.
+            public IntPtr hCursor;          // Handle to the cursor. 
+            public POINT ptScreenPos;       // A POINT structure that receives the screen coordinates of the cursor. 
+        }
 
-            BitmapData bitmapData1 = bmp1.LockBits(new Rectangle(0, 0, bmp1.Width - 1, bmp1.Height - 1), ImageLockMode.ReadOnly, bmp1.PixelFormat);
-            BitmapData bitmapData2 = bmp2.LockBits(new Rectangle(0, 0, bmp2.Width - 1, bmp2.Height - 1), ImageLockMode.ReadOnly, bmp2.PixelFormat);
+        [DllImport("user32.dll")]
+        static extern bool GetCursorInfo(out CURSORINFO pci);
 
-            Marshal.Copy(bitmapData1.Scan0, b1bytes, 0, bytes);
-            Marshal.Copy(bitmapData2.Scan0, b2bytes, 0, bytes);
 
-            for (int n = 0; n <= bytes - 1; n++) {
-                if (b1bytes[n] != b2bytes[n]) {
-                    result = false;
-                    break;
-                }
-            }
 
-            bmp1.UnlockBits(bitmapData1);
-            bmp2.UnlockBits(bitmapData2);
+        //Check Cursor Hover Rune Name Button
+        private bool CheckHoverCursor() {
 
-            return result;
+            //wait a bit in case if rune description box appear during that time
+            Thread.Sleep(150);
+
+            IntPtr league_hover = new IntPtr(65567); //LoL has custom hover/hand cursor icon
+            CURSORINFO pci;
+            pci.cbSize = Marshal.SizeOf(typeof(CURSORINFO));
+            GetCursorInfo(out pci);
+
+            bool isCursorHover = pci.hCursor == league_hover;
+            //Debug.WriteLine("Is hovering: " + isCursorHover);
+            return isCursorHover;
         }
 
 
         //Check Rune Mode
         public bool checkAndSetRuneMode() {
 
-            getLeagueCoords();
-
-            Rectangle rect = new Rectangle(
-                42 + league_window_x,
-                120 + league_window_y,
-                17,
-                16
-                );
-            Bitmap bmpScreenshot = new Bitmap(rect.Width, rect.Height);
-            Graphics g = Graphics.FromImage(bmpScreenshot);
-            g.CopyFromScreen(rect.Left, rect.Top, 0, 0, bmpScreenshot.Size, CopyPixelOperation.SourceCopy);
-            //bmpScreenshot.Save(@"C:\Users\Pinguluk\Desktop\screen.png");
-
-            Bitmap bmpResource = League_Of_Legends_Rune_Changer.Properties.Resources.check_rune_mode_by_icon;
-
-            bool compareImages = CompareBitmapsFast(bmpScreenshot, bmpResource);
-
+            //move cursor, if is on hover => in menu
+            SetCursorPos(
+                Int32.Parse(rune_edit_page_name["x"]) + league_window_x,
+                Int32.Parse(rune_edit_page_name["y"]) + league_window_y
+            );
 
             //Menu Mode
-            if (compareImages == true) {
+            if (CheckHoverCursor()) {
                 Debug.WriteLine("Menu Mode");
                 if (Int32.Parse(allDictionaries[0]["x"]) > 50) {
                     foreach (var currentDict in allDictionaries) {
                         currentDict["x"] = (Int32.Parse(currentDict["x"]) - 110).ToString();
                     }
                 }
-
-            }
-            //In Champion Select
-            else if (compareImages == false) {
-
-                rect = new Rectangle(
-                151 + league_window_x,
-                117 + league_window_y,
-                17,
-                16
+              //In Champion Select 
+            } else if (!CheckHoverCursor()) {
+                ///move cursor over "edit page name" button correspondent to the "in champion select"
+                SetCursorPos(
+                    Int32.Parse(rune_edit_page_name["x"]) + league_window_x + 110,
+                    Int32.Parse(rune_edit_page_name["y"]) + league_window_y
                 );
-
-                bmpScreenshot = new Bitmap(rect.Width, rect.Height);
-                g = Graphics.FromImage(bmpScreenshot);
-                g.CopyFromScreen(rect.Left, rect.Top, 0, 0, bmpScreenshot.Size, CopyPixelOperation.SourceCopy);
-                //bmpScreenshot.Save(@"C:\Users\Pinguluk\Desktop\screen2.png");
-
-                bmpResource = League_Of_Legends_Rune_Changer.Properties.Resources.check_rune_mode_by_icon;
-
-                bool compareImagesTwo = CompareBitmapsFast(bmpScreenshot, bmpResource);
-
-                if (compareImagesTwo == true) {
+                //check again if it's on hover, if true => in champion select, if not => neither in menu mode nor in champion select
+                if (CheckHoverCursor()) {
                     Debug.WriteLine("In Champion Select Mode");
                     if (Int32.Parse(allDictionaries[0]["x"]) < 160) {
                         foreach (var currentDict in allDictionaries) {
                             currentDict["x"] = (Int32.Parse(currentDict["x"]) + 110).ToString();
                         }
                     }
-                }
-                else if (compareImagesTwo == false) {
+                } else {
+                    //neither in menu mode nor in champion select
                     return false;
                 }
             }
@@ -691,10 +672,6 @@ namespace League_Of_Legends_Rune_Changer {
             //Debug.WriteLine(league_window_y);
 
             if (checkAndSetRuneMode() == true) {
-                SetCursorPos(
-                    Int32.Parse(rune_edit_page_name["x"]) + league_window_x,
-                    Int32.Parse(rune_edit_page_name["y"]) + league_window_y
-                    );
 
                 //edit name
                 LeftMouseClick(rune_edit_page_name);
@@ -748,7 +725,6 @@ namespace League_Of_Legends_Rune_Changer {
                 string name = node.Attributes["name"].Value;
                 string url = node["Url"].InnerText;
                 runes_listbox.Items.Add(new Runes_List(name, url));
-                //Debug.WriteLine();
             }
 
         }
