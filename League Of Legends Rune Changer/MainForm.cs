@@ -19,6 +19,8 @@ using System.Threading;
 using System.Xml;
 
 using System.Drawing.Imaging;
+using System.IO;
+using System.Web.UI.WebControls;
 
 using AutoUpdaterDotNET;
 
@@ -35,10 +37,28 @@ namespace League_Of_Legends_Rune_Changer {
         }
 
         private void MainForm_Load(object sender, EventArgs e) {
+
             AutoUpdater.OpenDownloadPage = true;
             AutoUpdater.ShowSkipButton = false;
             AutoUpdater.ShowRemindLaterButton = false;
             AutoUpdater.Start("https://raw.githubusercontent.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/master/checkUpdate.xml");
+
+            bool fileExists = (System.IO.File.Exists("runes_list.xml") ? true : false);
+
+            //Debug.WriteLine(fileExists);
+
+            if (!fileExists) {
+                MessageBox.Show("Can't find the rune list (runes_list.xml). A new file will be created.", "Error");
+                // Create a file to write to.
+                using (var sw = new StreamWriter(
+                    new FileStream("runes_list.xml", FileMode.Create, FileAccess.ReadWrite),Encoding.UTF8)) {
+                            sw.WriteLine(@"<?xml version=""1.0"" encoding=""utf-8""?>");
+                            sw.WriteLine("<root>");
+                            sw.WriteLine("</root>");
+                            sw.Close();
+                        }
+            }
+
             addCoordsToRuneDict();
             LoadRunesXML();
             addDictionaries();
@@ -261,7 +281,7 @@ namespace League_Of_Legends_Rune_Changer {
 
         //"League of Legends" Window Handle
         public IntPtr getLeagueWindowHandle() {
-            hwnd = WinGetHandle("League of Legends");
+            hwnd = FindWindow(null, "League of Legends");
             //hwnd = WinGetHandle("Form1");
             return hwnd;
         }
@@ -312,12 +332,11 @@ namespace League_Of_Legends_Rune_Changer {
         [DllImport("user32.dll")]
         public static extern void mouse_event(int dwFlags, int dx, int dy, int cButtons, int dwExtraInfo);
 
-        public static IntPtr WinGetHandle(string wName) {
-            foreach (Process pList in Process.GetProcesses())
-                if (pList.MainWindowTitle.Contains(wName))
-                    return pList.MainWindowHandle;
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
 
-            return IntPtr.Zero;
+        public static IntPtr FindWindow(string caption) {
+            return FindWindow(String.Empty, caption);
         }
 
         public static bool CompareBitmapsFast(Bitmap bmp1, Bitmap bmp2) {
@@ -328,7 +347,7 @@ namespace League_Of_Legends_Rune_Changer {
             if (!bmp1.Size.Equals(bmp2.Size) || !bmp1.PixelFormat.Equals(bmp2.PixelFormat))
                 return false;
 
-            int bytes = bmp1.Width * bmp1.Height * (Image.GetPixelFormatSize(bmp1.PixelFormat) / 8);
+            int bytes = bmp1.Width * bmp1.Height * (System.Drawing.Image.GetPixelFormatSize(bmp1.PixelFormat) / 8);
 
             bool result = true;
             byte[] b1bytes = new byte[bytes];
@@ -819,6 +838,13 @@ namespace League_Of_Legends_Rune_Changer {
             Process.Start("https://www.paypal.me/pinguluk");
         }
 
+        private void aboutLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+            Process.Start("https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer");
+        }
+
+        private void creditsLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+            Process.Start("https://www.facebook.com/pinguluk");
+        }
     }
 
 

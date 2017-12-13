@@ -31,7 +31,7 @@ namespace League_Of_Legends_Rune_Changer {
             return result;
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+        private void createYourCustomBuild_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
             Process.Start("http://na.leagueoflegends.com/en/featured/preseason-update#builder");
         }
 

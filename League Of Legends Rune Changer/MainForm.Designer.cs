@@ -30,6 +30,8 @@
             this.apply_rune_xml_button = new System.Windows.Forms.Button();
             this.donateLink = new System.Windows.Forms.LinkLabel();
             this.currentAppVersion = new System.Windows.Forms.Label();
+            this.creditsLabel = new System.Windows.Forms.LinkLabel();
+            this.aboutLink = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // runes_listbox
@@ -88,17 +90,45 @@
             this.currentAppVersion.AutoSize = true;
             this.currentAppVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.currentAppVersion.ForeColor = System.Drawing.Color.DimGray;
-            this.currentAppVersion.Location = new System.Drawing.Point(7, 266);
+            this.currentAppVersion.Location = new System.Drawing.Point(7, 258);
             this.currentAppVersion.Name = "currentAppVersion";
             this.currentAppVersion.Size = new System.Drawing.Size(94, 13);
             this.currentAppVersion.TabIndex = 20;
             this.currentAppVersion.Text = "currentAppVersion";
+            // 
+            // creditsLabel
+            // 
+            this.creditsLabel.AutoSize = true;
+            this.creditsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
+            this.creditsLabel.ForeColor = System.Drawing.Color.DimGray;
+            this.creditsLabel.LinkArea = new System.Windows.Forms.LinkArea(11, 8);
+            this.creditsLabel.Location = new System.Drawing.Point(2, 273);
+            this.creditsLabel.Name = "creditsLabel";
+            this.creditsLabel.Size = new System.Drawing.Size(106, 17);
+            this.creditsLabel.TabIndex = 23;
+            this.creditsLabel.TabStop = true;
+            this.creditsLabel.Text = "Created by Pinguluk";
+            this.creditsLabel.UseCompatibleTextRendering = true;
+            this.creditsLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.creditsLabel_LinkClicked);
+            // 
+            // aboutLink
+            // 
+            this.aboutLink.AutoSize = true;
+            this.aboutLink.Location = new System.Drawing.Point(250, 11);
+            this.aboutLink.Name = "aboutLink";
+            this.aboutLink.Size = new System.Drawing.Size(35, 13);
+            this.aboutLink.TabIndex = 24;
+            this.aboutLink.TabStop = true;
+            this.aboutLink.Text = "About";
+            this.aboutLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.aboutLink_LinkClicked);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(301, 292);
+            this.Controls.Add(this.aboutLink);
+            this.Controls.Add(this.creditsLabel);
             this.Controls.Add(this.currentAppVersion);
             this.Controls.Add(this.donateLink);
             this.Controls.Add(this.apply_rune_xml_button);
@@ -123,6 +153,8 @@
         private System.Windows.Forms.Button apply_rune_xml_button;
         private System.Windows.Forms.LinkLabel donateLink;
         private System.Windows.Forms.Label currentAppVersion;
+        private System.Windows.Forms.LinkLabel creditsLabel;
+        private System.Windows.Forms.LinkLabel aboutLink;
     }
 }
 

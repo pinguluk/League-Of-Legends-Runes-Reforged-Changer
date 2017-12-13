@@ -32,7 +32,7 @@
             this.add_rune_button = new System.Windows.Forms.Button();
             this.cancel_rune_button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.createYourCustomBuild = new System.Windows.Forms.LinkLabel();
             this.rune_name_error = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.rune_name_error)).BeginInit();
             this.SuspendLayout();
@@ -101,20 +101,20 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "(Max. 24 characters)";
             // 
-            // linkLabel1
+            // createYourCustomBuild
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.linkLabel1.LinkArea = new System.Windows.Forms.LinkArea(0, 24);
-            this.linkLabel1.Location = new System.Drawing.Point(12, 101);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(259, 42);
-            this.linkLabel1.TabIndex = 6;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Create your custom build here, then copy the link \r\nfrom \"Share your build\" using" +
+            this.createYourCustomBuild.AutoSize = true;
+            this.createYourCustomBuild.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.createYourCustomBuild.LinkArea = new System.Windows.Forms.LinkArea(0, 24);
+            this.createYourCustomBuild.Location = new System.Drawing.Point(12, 101);
+            this.createYourCustomBuild.Name = "createYourCustomBuild";
+            this.createYourCustomBuild.Size = new System.Drawing.Size(259, 42);
+            this.createYourCustomBuild.TabIndex = 6;
+            this.createYourCustomBuild.TabStop = true;
+            this.createYourCustomBuild.Text = "Create your custom build here, then copy the link \r\nfrom \"Share your build\" using" +
     "\r\n\"Direct Link\" (last icon bottom right)\r\n";
-            this.linkLabel1.UseCompatibleTextRendering = true;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.createYourCustomBuild.UseCompatibleTextRendering = true;
+            this.createYourCustomBuild.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.createYourCustomBuild_LinkClicked);
             // 
             // rune_name_error
             // 
@@ -128,7 +128,7 @@
             this.CancelButton = this.cancel_rune_button;
             this.ClientSize = new System.Drawing.Size(284, 190);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.createYourCustomBuild);
             this.Controls.Add(this.cancel_rune_button);
             this.Controls.Add(this.add_rune_button);
             this.Controls.Add(this.add_rune_url_inputbox);
@@ -156,7 +156,7 @@
         private System.Windows.Forms.Button add_rune_button;
         private System.Windows.Forms.Button cancel_rune_button;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel createYourCustomBuild;
         private System.Windows.Forms.ErrorProvider rune_name_error;
     }
 }
