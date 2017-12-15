@@ -74,6 +74,7 @@ namespace League_Of_Legends_Rune_Changer {
         public int league_window_x;
         public int league_window_y;
         public Size league_window_size;
+        public double league_window_scale;
 
         XmlDocument xmlDoc = new XmlDocument();
 
@@ -293,10 +294,15 @@ namespace League_Of_Legends_Rune_Changer {
             focusLeagueWindow();
             RECT rct = new RECT();
             league_window_exists = GetWindowRect(hwnd, ref rct);
-            league_window_x = rct.Left;
-            league_window_y = rct.Top;
+
             league_window_size.Width = rct.Right - rct.Left;
             league_window_size.Height = rct.Bottom - rct.Top;
+
+            league_window_scale = (double)league_window_size.Width / 1280;
+
+            league_window_x = rct.Left;
+            league_window_y = rct.Top;
+
         }
 
         //Unminimize & Bring "League of Legends" on front
@@ -306,7 +312,7 @@ namespace League_Of_Legends_Rune_Changer {
         }
 
 
-        //IDK
+        //DLLImports
         [DllImport("user32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool GetWindowRect(IntPtr hWnd, ref RECT lpRect);
@@ -378,6 +384,12 @@ namespace League_Of_Legends_Rune_Changer {
         }
 
 
+        /// Return Type: BOOL->int
+        ///fBlockIt: BOOL->int
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern bool BlockInput(bool fBlockIt);
+
+
         //Set All Dictionaries to Menu mode
         public void SetDictionariesMenuMode() {
             if (Int32.Parse(allDictionaries[0]["x"]) > 50) {
@@ -405,20 +417,19 @@ namespace League_Of_Legends_Rune_Changer {
 
             //move cursor, if is on hover => in menu
             SetCursorPos(
-                Int32.Parse(rune_edit_page_name["x"]) + league_window_x,
-                Int32.Parse(rune_edit_page_name["y"]) + league_window_y
+                Convert.ToInt32((Int32.Parse(rune_edit_page_name["x"]) * league_window_scale + league_window_x)),
+                Convert.ToInt32((Int32.Parse(rune_edit_page_name["y"]) * league_window_scale + league_window_y))
             );
 
             //Menu Mode
             if (CheckHoverCursor()) {
                 Debug.WriteLine("Menu Mode");
                 SetDictionariesMenuMode();
-                //In Champion Select 
-            } else {
+            } else { //In Champion Select 
                 ///move cursor over "edit page name" button correspondent to the "in champion select"
                 SetCursorPos(
-                    Int32.Parse(rune_edit_page_name["x"]) + league_window_x + 110,
-                    Int32.Parse(rune_edit_page_name["y"]) + league_window_y
+                Convert.ToInt32((Int32.Parse(rune_edit_page_name["x"]) * league_window_scale + league_window_x + Convert.ToDouble(110)* league_window_scale)),
+                Convert.ToInt32((Int32.Parse(rune_edit_page_name["y"]) * league_window_scale + league_window_y))
                 );
                 //check again if it's on hover, if true => in champion select, if not => neither in menu mode nor in champion select
                 if (CheckHoverCursor()) {
@@ -437,8 +448,8 @@ namespace League_Of_Legends_Rune_Changer {
 
         //Left Mouse Click Function
         public void LeftMouseClick(Dictionary<string, string> runeDict) {
-            int xpos = Int32.Parse(runeDict["x"]) + league_window_x;
-            int ypos = Int32.Parse(runeDict["y"]) + league_window_y;
+            int xpos = Convert.ToInt32((Int32.Parse(runeDict["x"]) * league_window_scale)) + league_window_x;
+            int ypos = Convert.ToInt32((Int32.Parse(runeDict["y"]) * league_window_scale)) + league_window_y;
             //Thread.Sleep(100);
             SetCursorPos(xpos, ypos);
             //Debug.WriteLine("xpos:" + xpos + "\n" + "ypos: " + ypos + "\n");
@@ -459,11 +470,6 @@ namespace League_Of_Legends_Rune_Changer {
                 return;
             }
 
-            //check resolution
-            if (league_window_size != new Size(1280, 720)) {
-                MessageBox.Show(new Form { TopMost = true }, "Set League Client resolution to 1280 x 720 first.", "Error");
-                return;
-            }
 
             Regex rgx = new Regex(@"\d{8}$");
             Match match = rgx.Match(currentRuneXML);
@@ -678,6 +684,10 @@ namespace League_Of_Legends_Rune_Changer {
             }
 
 
+            //Block inputs
+            BlockInput(true);
+
+
             //initial cursor pos
             int cursor_x = Cursor.Position.X;
             int cursor_y = Cursor.Position.Y;
@@ -714,6 +724,10 @@ namespace League_Of_Legends_Rune_Changer {
 
                 //set cursor to original pos
                 SetCursorPos(cursor_x, cursor_y);
+
+                //Unblock inputs
+                BlockInput(false);
+
             } else {
                 MessageBox.Show(new Form { TopMost = true }, "Go to a Rune Page and try again.", "Error");
             }
