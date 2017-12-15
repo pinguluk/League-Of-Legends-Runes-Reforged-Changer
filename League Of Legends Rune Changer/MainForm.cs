@@ -729,6 +729,7 @@ namespace League_Of_Legends_Rune_Changer {
                 BlockInput(false);
 
             } else {
+                BlockInput(false);
                 MessageBox.Show(new Form { TopMost = true }, "Go to a Rune Page and try again.", "Error");
             }
         }
