@@ -6,7 +6,7 @@ Automated Runes Reforged Page manager for League of Legends
 You can download the latest release from here:   
 [Download](https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/releases)
 
-## Will I get banned for using this?
+## Will I get banned for using this? [(source)](https://github.com/dewster/lol-mastery-manager-new-client)
 
 Riot Sargonas has stated the following on the matter:
 
