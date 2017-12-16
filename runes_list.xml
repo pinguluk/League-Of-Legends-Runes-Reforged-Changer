@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+<Rune name="Aatrox">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01112337</Url>
+</Rune>
+<Rune name="Ahri Burst">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10120138</Url>
+</Rune>
+<Rune name="Ahri Poke">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21102115</Url>
+</Rune>
+<Rune name="Akali Assassin">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8128?build=12220016</Url>
+</Rune>
+<Rune name="Akali Bruiser">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30122126</Url>
+</Rune>
+<Rune name="Alistar">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8439?build=31201348</Url>
+</Rune>
+<Rune name="Amumu Tank">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8439?build=31220223</Url>
+</Rune>
+<Rune name="Amumu AP">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10220158</Url>
+</Rune>
+<Rune name="Anivia">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21102105</Url>
+</Rune>
+<Rune name="Annie">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8300-8326?build=40000223</Url>
+</Rune>
+<Rune name="Ashe">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00121327</Url>
+</Rune>
+<Rune name="Aurelion Sol">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22011347</Url>
+</Rune>
+<Rune name="Azir AS">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01102108</Url>
+</Rune>
+<Rune name="Azir MS">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22012031</Url>
+</Rune>
+<Rune name="Bard Support">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8300-8359?build=42100327</Url>
+</Rune>
+<Rune name="Bard Agro">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8214?build=20111103</Url>
+</Rune>
+<Rune name="Blitzcrank">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8300-8326?build=40100338</Url>
+</Rune>
+<Rune name="Brand Mid">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21100105</Url>
+</Rune>
+<Rune name="Brand Supp">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21100103</Url>
+</Rune>
+<Rune name="Braum">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8465?build=32200338</Url>
+</Rune>
+<Rune name="Caitlyn Bully">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8128?build=12222158</Url>
+</Rune>
+<Rune name="Caitlyn Late">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8021?build=02101108</Url>
+</Rune>
+<Rune name="Camille">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00112257</Url>
+</Rune>
+<Rune name="Cassiopeia">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22012347</Url>
+</Rune>
+<Rune name="Cho&apos;gath Jungle">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8124?build=11001260</Url>
+</Rune>
+<Rune name="Cho&apos;gath Top">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30120242</Url>
+</Rune>
+<Rune name="Corki">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8128?build=12222118</Url>
+</Rune>
+<Rune name="Darius Offensive">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8021?build=02110207</Url>
+</Rune>
+<Rune name="Darius Defensive">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30021041</Url>
+</Rune>
+<Rune name="Diana Mid">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10220108</Url>
+</Rune>
+<Rune name="Diana Jungle">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=00100025</Url>
+</Rune>
+<Rune name="Dr. Mundo">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30122337</Url>
+</Rune>
+<Rune name="Draven ADC">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00120148</Url>
+</Rune>
+<Rune name="Draven Burst">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8128?build=12122148</Url>
+</Rune>
+<Rune name="Ekko Burst">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10220128</Url>
+</Rune>
+<Rune name="Ekko Unique">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8300-8351?build=41212125</Url>
+</Rune>
+<Rune name="Elise">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10202263</Url>
+</Rune>
+<Rune name="Evelynn Jungle">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8124?build=11221124</Url>
+</Rune>
+<Rune name="Evelynn Top">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21202336</Url>
+</Rune>
+<Rune name="Ezreal ADC">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00121313</Url>
+</Rune>
+<Rune name="Ezreal Poke">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8128?build=12120158</Url>
+</Rune>
+<Rune name="Ezreal AP">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21202361</Url>
+</Rune>
+<Rune name="Fiddlesticks">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22212327</Url>
+</Rune>
+<Rune name="Fiora">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00122237</Url>
+</Rune>
+<Rune name="Fizz">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10220103</Url>
+</Rune>
+<Rune name="Galio Tank">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30220347</Url>
+</Rune>
+<Rune name="Galio AP">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21002125</Url>
+</Rune>
+<Rune name="Galio Bruiser">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22102258</Url>
+</Rune>
+<Rune name="Gangplank">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8300-8359?build=42110238</Url>
+</Rune>
+<Rune name="Garen Offensive">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22212208</Url>
+</Rune>
+<Rune name="Garen Defensive">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30020014</Url>
+</Rune>
+<Rune name="Gnar">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00110265</Url>
+</Rune>
+<Rune name="Gragas Tank">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8465?build=32201223</Url>
+</Rune>
+<Rune name="Gragas AP">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10221128</Url>
+</Rune>
+<Rune name="Graves Lifesteal">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8021?build=02122015</Url>
+</Rune>
+<Rune name="Graves Burst">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8128?build=12222016</Url>
+</Rune>
+<Rune name="Hecarim">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8124?build=11221147</Url>
+</Rune>
+<Rune name="Heimerdonger">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21002324</Url>
+</Rune>
+<Rune name="Illaoi">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30021126</Url>
+</Rune>
+<Rune name="Irelia Bruiser">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00112285</Url>
+</Rune>
+<Rune name="Irelia On-hit">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01112347</Url>
+</Rune>
+<Rune name="Ivern">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8214?build=20001227</Url>
+</Rune>
+<Rune name="Janna">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8214?build=20201336</Url>
+</Rune>
+<Rune name="Jarvan IV Assassin">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10222182</Url>
+</Rune>
+<Rune name="Jarvan IV Tank">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8439?build=31200223</Url>
+</Rune>
+<Rune name="Jax Offensive">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01102258</Url>
+</Rune>
+<Rune name="Jax Defensive">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00010251</Url>
+</Rune>
+<Rune name="Jayce">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10220113</Url>
+</Rune>
+<Rune name="Jhin Dmg">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01100324</Url>
+</Rune>
+<Rune name="Jhin Sustain">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8021?build=02100324</Url>
+</Rune>
+<Rune name="Jinx">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00101324</Url>
+</Rune>
+<Rune name="Kalista">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01100052</Url>
+</Rune>
+<Rune name="Karma AP">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8214?build=20202272</Url>
+</Rune>
+<Rune name="Karma Tank">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30221223</Url>
+</Rune>
+<Rune name="Karthus">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21202324</Url>
+</Rune>
+<Rune name="Kassadin">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10220108</Url>
+</Rune>
+<Rune name="Katarina Snowball">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10220016</Url>
+</Rune>
+<Rune name="Katarina Resetz">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8128?build=12220016</Url>
+</Rune>
+<Rune name="Kayle">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01110128</Url>
+</Rune>
+<Rune name="Kayn Both">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10220016</Url>
+</Rune>
+<Rune name="Kayn Blue">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10222148</Url>
+</Rune>
+<Rune name="Kayn Red">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10220275</Url>
+</Rune>
+<Rune name="Kennen">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8124?build=11221327</Url>
+</Rune>
+<Rune name="Kha&apos;zix">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8128?build=12220148</Url>
+</Rune>
+<Rune name="Kindred">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01101052</Url>
+</Rune>
+<Rune name="Kled">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00110265</Url>
+</Rune>
+<Rune name="Kog&apos;maw">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01101323</Url>
+</Rune>
+<Rune name="LeBlanc">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10222183</Url>
+</Rune>
+<Rune name="Lee Sin">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10222236</Url>
+</Rune>
+<Rune name="Leona">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8439?build=31200381</Url>
+</Rune>
+<Rune name="Lissandra">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10120113</Url>
+</Rune>
+<Rune name="Lucian">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00101025</Url>
+</Rune>
+<Rune name="Lulu">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8214?build=20202326</Url>
+</Rune>
+<Rune name="Lux Utility Poke">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8214?build=20202123</Url>
+</Rune>
+<Rune name="Lux Burst">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10020125</Url>
+</Rune>
+<Rune name="Malphite">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30200381</Url>
+</Rune>
+<Rune name="Malzahar">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21220105</Url>
+</Rune>
+<Rune name="Maokai Tank Top">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30220223</Url>
+</Rune>
+<Rune name="Maokai Support AP">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21100103</Url>
+</Rune>
+<Rune name="Master Yi">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01110148</Url>
+</Rune>
+<Rune name="Miss Fortune">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21202324</Url>
+</Rune>
+<Rune name="Mordekaiser">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8300-8351?build=41101248</Url>
+</Rune>
+<Rune name="Morgana">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8214?build=20202362</Url>
+</Rune>
+<Rune name="Nami">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8214?build=20102336</Url>
+</Rune>
+<Rune name="Nasus">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22202336</Url>
+</Rune>
+<Rune name="Nautilus">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8439?build=32220381</Url>
+</Rune>
+<Rune name="Nidalee Assassin">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10220184</Url>
+</Rune>
+<Rune name="Nidalee Healer">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8214?build=20102257</Url>
+</Rune>
+<Rune name="Nocturne">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8128?build=12222123</Url>
+</Rune>
+<Rune name="Nunu">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8465?build=32200337</Url>
+</Rune>
+<Rune name="Olaf">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22212257</Url>
+</Rune>
+<Rune name="Orianna">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8214?build=20102323</Url>
+</Rune>
+<Rune name="Ornn Tanky">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30222213</Url>
+</Rune>
+<Rune name="Ornn Never Recall">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8300-8359?build=42112358</Url>
+</Rune>
+<Rune name="Pantheon">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21120125</Url>
+</Rune>
+<Rune name="Poppy">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30120337</Url>
+</Rune>
+<Rune name="Quinn">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8124?build=11221147</Url>
+</Rune>
+<Rune name="Rakan">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8214?build=20202227</Url>
+</Rune>
+<Rune name="Rammus">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8439?build=31000337</Url>
+</Rune>
+<Rune name="Rek&apos;sai">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01110238</Url>
+</Rune>
+<Rune name="Renekton">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=00112257</Url>
+</Rune>
+<Rune name="Rengar Jungle">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8128?build=12222148</Url>
+</Rune>
+<Rune name="Rengar Top Burst">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10222128</Url>
+</Rune>
+<Rune name="Rengar Top Tank">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30101203</Url>
+</Rune>
+<Rune name="Riven">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10220138</Url>
+</Rune>
+<Rune name="Rumble">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21210327</Url>
+</Rune>
+<Rune name="Ryze Speed">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22102316</Url>
+</Rune>
+<Rune name="Ryze Burst">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10120138</Url>
+</Rune>
+<Rune name="Sejuani">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8439?build=31200337</Url>
+</Rune>
+<Rune name="Shaco Bruiser">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00110205</Url>
+</Rune>
+<Rune name="Shaco Burst, for both AP and AD">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8128?build=12222138</Url>
+</Rune>
+<Rune name="Shen">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30121223</Url>
+</Rune>
+<Rune name="Shyvanna">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01112205</Url>
+</Rune>
+<Rune name="Singed">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22010285</Url>
+</Rune>
+<Rune name="Sion Tank">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30120317</Url>
+</Rune>
+<Rune name="Sion AD">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21222337</Url>
+</Rune>
+<Rune name="Sion AP">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21102105</Url>
+</Rune>
+<Rune name="Sion Supp">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8465?build=32200318</Url>
+</Rune>
+<Rune name="Sivir">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00101114</Url>
+</Rune>
+<Rune name="Skarner">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8439?build=31020337</Url>
+</Rune>
+<Rune name="Sona Healer">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8300-8359?build=42100337</Url>
+</Rune>
+<Rune name="Sona Poke">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8214?build=20100336</Url>
+</Rune>
+<Rune name="Sona Full &quot;Support&quot;">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10002138</Url>
+</Rune>
+<Rune name="Soraka Defensive">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8214?build=20201227</Url>
+</Rune>
+<Rune name="Soraka Offensive">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8214?build=20200103</Url>
+</Rune>
+<Rune name="Swain">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22212327</Url>
+</Rune>
+<Rune name="Syndra Offensive">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10022128</Url>
+</Rune>
+<Rune name="Syndra Defensive">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10122323</Url>
+</Rune>
+<Rune name="Tahm Kench">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22011258</Url>
+</Rune>
+<Rune name="Taliyah">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22102323</Url>
+</Rune>
+<Rune name="Talon Roam">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8124?build=11221147</Url>
+</Rune>
+<Rune name="Talon Bully">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10222016</Url>
+</Rune>
+<Rune name="Talon Escape">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22012125</Url>
+</Rune>
+<Rune name="Taric Supp">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8465?build=32201317</Url>
+</Rune>
+<Rune name="Taric Top">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00112273</Url>
+</Rune>
+<Rune name="Teemo">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8300-8351?build=41101105</Url>
+</Rune>
+<Rune name="Thresh">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8300-8351?build=41100237</Url>
+</Rune>
+<Rune name="Tristana">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00121342</Url>
+</Rune>
+<Rune name="Trundle">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30121014</Url>
+</Rune>
+<Rune name="Tryndamere">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00112128</Url>
+</Rune>
+<Rune name="Twisted Fate">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8230?build=22212327</Url>
+</Rune>
+<Rune name="Twitch">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01101323</Url>
+</Rune>
+<Rune name="Udyr Tiger">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00110147</Url>
+</Rune>
+<Rune name="Udyr Phoenix">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01110203</Url>
+</Rune>
+<Rune name="Urgot">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00112285</Url>
+</Rune>
+<Rune name="Varus Poke">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21102326</Url>
+</Rune>
+<Rune name="Varus ADC">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=00101323</Url>
+</Rune>
+<Rune name="Varus AP">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01100128</Url>
+</Rune>
+<Rune name="Vayne">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=01101323</Url>
+</Rune>
+<Rune name="Veigar">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10021138</Url>
+</Rune>
+<Rune name="Vel&apos;koz">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21202323</Url>
+</Rune>
+<Rune name="Vi">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00112203</Url>
+</Rune>
+<Rune name="Viktor">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21102323</Url>
+</Rune>
+<Rune name="Vlad">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10120138</Url>
+</Rune>
+<Rune name="Volibear">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8439?build=31000337</Url>
+</Rune>
+<Rune name="Warwick">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00112237</Url>
+</Rune>
+<Rune name="Wukong">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10222014</Url>
+</Rune>
+<Rune name="Xayah">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00101138</Url>
+</Rune>
+<Rune name="Xerath">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21102313</Url>
+</Rune>
+<Rune name="Xin Zhao">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8008?build=00112237</Url>
+</Rune>
+<Rune name="Yasuo Standard">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8000-8003?build=00100108</Url>
+</Rune>
+<Rune name="Yasuo Unique">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8300-8351?build=41101013</Url>
+</Rune>
+<Rune name="Yorick Mori">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8437?build=30120223</Url>
+</Rune>
+<Rune name="Zac">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8400-8439?build=31200337</Url>
+</Rune>
+<Rune name="Zed">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8100-8112?build=10220123</Url>
+</Rune>
+<Rune name="Ziggs">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21102323</Url>
+</Rune>
+<Rune name="Zilean">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21202364</Url>
+</Rune>
+<Rune name="Zoe">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21212125</Url>
+</Rune>
+<Rune name="Zyra">
+  <Url>http://na.leagueoflegends.com/en/featured/preseason-update/8200-8229?build=21200103</Url>
+</Rune>
+</root>
