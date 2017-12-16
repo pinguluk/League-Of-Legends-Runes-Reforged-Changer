@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>League_Of_Legends_Rune_Changer</RootNamespace>
-    <AssemblyName>League Of Legends Rune Changer</AssemblyName>
+    <AssemblyName>League Of Legends Runes Reforged Changer</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -23,6 +23,9 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer</SupportUrl>
+    <ProductName>League Of Legends Runes Reforged Changer</ProductName>
+    <PublisherName>Pinguluk</PublisherName>
     <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
