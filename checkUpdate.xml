@@ -2,6 +2,6 @@
 <item>
     <version>1.0.0.1</version>
     <url>https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/releases</url>
-    <changelog>https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/releases</changelog>
+    <changelog>https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/blob/master/CHANGELOG.md</changelog>
     <mandatory>true</mandatory>
 </item>
