@@ -66,7 +66,7 @@
             // add_rune_url_inputbox
             // 
             this.add_rune_url_inputbox.Location = new System.Drawing.Point(12, 74);
-            this.add_rune_url_inputbox.MaxLength = 83;
+            this.add_rune_url_inputbox.MaxLength = 84;
             this.add_rune_url_inputbox.Name = "add_rune_url_inputbox";
             this.add_rune_url_inputbox.Size = new System.Drawing.Size(260, 20);
             this.add_rune_url_inputbox.TabIndex = 3;

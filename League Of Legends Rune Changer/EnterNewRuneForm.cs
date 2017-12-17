@@ -52,7 +52,7 @@ namespace League_Of_Legends_Rune_Changer {
                 MessageBox.Show("Please enter the URL for the Rune build.", "Error");
                 goNext = false;
             } else {
-                string url_pattern = @"(http:\/\/na.leagueoflegends.com\/en\/featured\/preseason-update\/)\d{4}-\d{4}\?build=\d{8}";
+                string url_pattern = @"(^(http|https):\/\/na.leagueoflegends.com\/en\/featured\/preseason-update\/)\d{4}-\d{4}\?build=\d{8}";
                 Regex r = new Regex(url_pattern);
 
                 Match m = r.Match(add_rune_url);
