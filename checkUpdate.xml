@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
     <url>https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/releases</url>
-    <mandatory>false</mandatory>
+    <changelog>https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/releases</changelog>
+    <mandatory>true</mandatory>
 </item>
