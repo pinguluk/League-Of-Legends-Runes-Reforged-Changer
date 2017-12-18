@@ -34,7 +34,7 @@ I can't give you any kind of update now or anytime in the immediate future, but 
 
 
 ## Issues
-If you encounter an issue please let me know [here](https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/issues)! Also I appreciate any kind of feedback!
+If you encounter an issue please let me know [here](https://github.com/pinguluk/League-Of-Legends-Runes-Reforged-Changer/issues) or send me an email at [contactpinguluk@gmail.com](contactpinguluk@gmail.com)! Also I appreciate any kind of feedback!
 
 ## Donate
 If you find this program useful, you can give me a cup of coffee :)  
