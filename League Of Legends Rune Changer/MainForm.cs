@@ -128,8 +128,20 @@ namespace League_Of_Legends_Rune_Changer {
         Dictionary<string, string> rune_col_2_row_3_keystone_2 = new Dictionary<string, string>();
         Dictionary<string, string> rune_col_2_row_3_keystone_3 = new Dictionary<string, string>();
 
+        //Separated Dictionaries from all dictionaries
+        Dictionary<string, string> close_lol_client_button = new Dictionary<string, string>();
+        Dictionary<string, string> settings_lol_client_button = new Dictionary<string, string>();
+
         //Add Coords to Runes Dict
         public void addCoordsToRuneDict() {
+
+            //Close Client Button
+            close_lol_client_button.Add("x", "1260");
+            close_lol_client_button.Add("y", "15");
+
+            //Settings Client Button
+            settings_lol_client_button.Add("x", "1225");
+            settings_lol_client_button.Add("y", " 15");
 
             //Edit page name
             rune_edit_page_name.Add("x", "50");
@@ -376,7 +388,7 @@ namespace League_Of_Legends_Rune_Changer {
 
 
         //Check Cursor Hover Rune Name Button
-        private bool CheckHoverCursor() {
+        private IntPtr getCursorHandle() {
 
             //wait a bit in case if rune description box appear during that time
             Thread.Sleep(100);
@@ -386,11 +398,10 @@ namespace League_Of_Legends_Rune_Changer {
             pci.cbSize = Marshal.SizeOf(typeof(CURSORINFO));
             GetCursorInfo(out pci);
 
-            bool isCursorHover = pci.hCursor == league_hover;
+            IntPtr cursorHandle = pci.hCursor;
             //Debug.WriteLine("Is hovering: " + isCursorHover);
-            return isCursorHover;
+            return cursorHandle;
         }
-
 
         /// Return Type: BOOL->int
         ///fBlockIt: BOOL->int
@@ -423,28 +434,74 @@ namespace League_Of_Legends_Rune_Changer {
             //Reset Dictionaries to menu mode (default);
             SetDictionariesMenuMode();
 
-            //move cursor, if is on hover => in menu
+            bool isMenuMode = false;
+            bool isChampionSelectMode = false;
+            bool isNothingMode = false;
+
+            //move cursor to 3 locations, compare each cursor handle if equal with the first one and determine if it's menu mode or champion select
+            //Move to close lol client button
             SetCursorPos(
-                Convert.ToInt32((Int32.Parse(rune_edit_page_name["x"]) * league_window_scale + league_window_x)),
+                Convert.ToInt32((Int32.Parse(close_lol_client_button["x"]) * league_window_scale + league_window_x)),
+                Convert.ToInt32((Int32.Parse(close_lol_client_button["y"]) * league_window_scale + league_window_y))
+            );
+
+            IntPtr firstCursorHover = getCursorHandle();
+            Debug.WriteLine(firstCursorHover);
+
+            //Move to settings lol client button
+            SetCursorPos(
+                Convert.ToInt32((Int32.Parse(settings_lol_client_button["x"]) * league_window_scale + league_window_x)),
+                Convert.ToInt32((Int32.Parse(settings_lol_client_button["y"]) * league_window_scale + league_window_y))
+            );
+
+            IntPtr secondCursorHover = getCursorHandle();
+            Debug.WriteLine(secondCursorHover);
+
+
+            //Try and move cursor to rune page (menu mode)
+            SetCursorPos(
+            Convert.ToInt32((Int32.Parse(rune_edit_page_name["x"]) * league_window_scale + league_window_x)),
+            Convert.ToInt32((Int32.Parse(rune_edit_page_name["y"]) * league_window_scale + league_window_y))
+            );
+
+            IntPtr thirdCursorHover = getCursorHandle();
+            Debug.WriteLine(thirdCursorHover);
+
+
+            ///move cursor over "edit page name" button correspondent to the "in champion select"
+            SetCursorPos(
+                Convert.ToInt32((Int32.Parse(rune_edit_page_name["x"]) * league_window_scale + league_window_x + Convert.ToDouble(110) * league_window_scale)),
                 Convert.ToInt32((Int32.Parse(rune_edit_page_name["y"]) * league_window_scale + league_window_y))
             );
 
+            IntPtr fourthCursorHover = getCursorHandle();
+            Debug.WriteLine(fourthCursorHover);
+
+            //Check hursor handle order like so:
+            //if close button == settings buton && rune edit name menu mode == close button => menu mode
+            if (firstCursorHover == secondCursorHover && thirdCursorHover == firstCursorHover) {
+                isMenuMode = true;
+            }
+            //if it's not menu mode, check if close button == settings buton && rune edit name champion select mode == close button => champion select mode
+            else if (isMenuMode == false && firstCursorHover == secondCursorHover && fourthCursorHover == firstCursorHover) {
+                isChampionSelectMode = true;
+            //if menu mode && champion select == false => no rune page detected
+            } else if (isMenuMode == false && isChampionSelectMode == false) {
+                isNothingMode = true;
+            }
+
             //Menu Mode
-            if (CheckHoverCursor()) {
+            if (isMenuMode) {
                 Debug.WriteLine("Menu Mode");
                 SetDictionariesMenuMode();
-            } else { //In Champion Select 
-                ///move cursor over "edit page name" button correspondent to the "in champion select"
-                SetCursorPos(
-                Convert.ToInt32((Int32.Parse(rune_edit_page_name["x"]) * league_window_scale + league_window_x + Convert.ToDouble(110)* league_window_scale)),
-                Convert.ToInt32((Int32.Parse(rune_edit_page_name["y"]) * league_window_scale + league_window_y))
-                );
-                //check again if it's on hover, if true => in champion select, if not => neither in menu mode nor in champion select
-                if (CheckHoverCursor()) {
+            } else { 
+                //In Champion Select 
+                if (isChampionSelectMode) {
                     Debug.WriteLine("In Champion Select Mode");
                     SetDictionariesInChampionSelect();
-                } else {
+                } else if (isNothingMode) {
                     //neither in menu mode nor in champion select
+                    Debug.WriteLine("Nothing Mode");
                     return false;
                 }
             }
@@ -713,7 +770,7 @@ namespace League_Of_Legends_Rune_Changer {
                 SendKeys.Send("{ENTER}");
 
                 //wait for name to save
-                Thread.Sleep(100);
+                Thread.Sleep(250);
 
                 //select grid
                 LeftMouseClick(rune_grid_style_2);
@@ -726,6 +783,9 @@ namespace League_Of_Legends_Rune_Changer {
                     LeftMouseClick(currentRuneClick);
                     //Thread.Sleep(1000);
                 }
+
+                //wait a bit to prevent name from not updating when saving
+                Thread.Sleep(250);
 
                 //click save button
                 LeftMouseClick(rune_save_button);
