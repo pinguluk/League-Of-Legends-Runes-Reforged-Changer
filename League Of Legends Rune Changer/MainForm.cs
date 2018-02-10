@@ -770,7 +770,7 @@ namespace League_Of_Legends_Rune_Changer {
                 SendKeys.Send("{ENTER}");
 
                 //wait for name to save
-                Thread.Sleep(250);
+                Thread.Sleep(100);
 
                 //select grid
                 LeftMouseClick(rune_grid_style_2);
@@ -781,11 +781,11 @@ namespace League_Of_Legends_Rune_Changer {
                     //Debug.WriteLine(currentRuneClick["y"]);
                     //Debug.WriteLine("");
                     LeftMouseClick(currentRuneClick);
-                    //Thread.Sleep(1000);
+                    Thread.Sleep(50);
                 }
 
                 //wait a bit to prevent name from not updating when saving
-                Thread.Sleep(250);
+                Thread.Sleep(100);
 
                 //click save button
                 LeftMouseClick(rune_save_button);
