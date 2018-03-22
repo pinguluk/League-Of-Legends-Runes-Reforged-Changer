@@ -1,3 +1,7 @@
+# PROJECT DISCONTINUED
+Unfortunately, I won't be able to continue development on this project, due to lack of time. I suggest you give this one a try instead.  
+https://github.com/OrangeNote/RuneBook
+
 # League of Legends Runes Reforged Changer
 Automated Runes Reforged Page manager for League of Legends
 
